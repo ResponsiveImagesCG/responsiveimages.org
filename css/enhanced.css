@@ -12,13 +12,17 @@ html, body {
 a {
 	color: #6f201b;
 	text-decoration: none;
+	position: relative;
 	-webkit-transition: color .1s linear, background-color .1s linear;
 	-moz-transition: color .1s linear, background-color .1s linear;
 	-o-transition: color .1s linear, background-color .1s linear;
 	transition: color .1s linear, background-color .1s linear;
 }
 a:hover {
-	color: #c24c4b;
+	color: #d6342d;
+}
+a:active {
+	top: 1px;
 }
 img {
 	max-width: 100%;
@@ -191,6 +195,8 @@ table {
 }
 table a {
 	font-weight: bold;
+	display: block;
+	padding: .8em .5em .6em 0;
 }
 table thead,
 .assets-hed {
@@ -210,7 +216,6 @@ table tbody td,
 table tbody th {
 	font-size: .95em;
 	border-top: 1px solid #d6d6d6;
-	padding: .8em .5em .6em 0;
 }
 table tbody th {
 	width: 65%;
@@ -237,18 +242,19 @@ table tbody td {
 	overflow: auto;
 	padding: 0 2.941176470588% 3em 2.941176470588%;
 }
-.doc-foot .subhed {
+.social {
+	clear: both;
+	padding: 2em 0 0 0;
+	text-align: center;
+}
+.social .subhed {
 	text-indent: -9999px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	width: 2em;
 	height: 1.8em;
-	margin: 0 0 0 .35em;
+	margin: 0 .35em;
 	padding: 0;
-}
-.social {
-	padding: 1.5em 0 0 0;
-	float: right;
 }
 .social a:hover {
 	background-color: #d6342d;
@@ -276,11 +282,12 @@ table tbody td {
 	background-repeat: no-repeat;
 	background-position: 0 1.5em;
 	float: left;
-	padding: .9em 0 0 4.5em;
 	position: relative;
+	padding: .9em 0 0 4.5em;
 }
 .assets a {
 	display: block;
+	position: static;
 }
 .assets-hed {
 	margin: .5em 0 0 0;
@@ -325,11 +332,18 @@ a:hover .assets-hed {
 	.logo { 
 		width: 340px;
 	}
+	.social {
+		float: right;
+	}
 	.assets {
 		width: 48.936170212766%;
 	}
 	.social {
+		padding-top: 1.5em;
 		float: right;
+	}
+	.social .subhed {
+		margin: 0 0 0 .35em;
 	}
 }
 

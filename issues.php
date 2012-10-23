@@ -59,11 +59,11 @@
 		foreach( $issues as $i ) {
 			print("<tr>");
 			print("<td>" . $i->number . "</td>");
-			print('<th scope="row"><a href="' . $i->html_url . '">'. $i->title . '</a>');
+			print('<th scope="row"><a href="' . $i->html_url . '">'. $i->title );
 			if( $i->comments > 0 ) {
 				print(' <b class="comments">' . $i->comments . ' comment' . ( $i->comments == 1 ? '' : 's' ) . '</b>');
 			}
-			print('</th>');
+			print('</a></th>');
 			//print('<td class="label">' . "Enhancement" . '</td>');
 			print('<td><a href="https://github.com/' . $i->user->login . '">'. $i->user->login . '</a></td>');
 			print('<td>' . days_passed( $i->updated_at ) . '</td>');
