@@ -1,0 +1,14 @@
+<svg width="450" height="225" xmlns="http://www.w3.org/2000/svg">
+ <g opacity=".25">
+  <title>BG Pattern</title>
+  <rect id="svg_1" height="150" width="150" y="0" x="0" fill="#d1d2d4"/>
+  <rect id="svg_2" height="150" width="75" y="75" x="0" fill="#bcbdc0"/>
+  <rect id="svg_3" height="75" width="75" y="0" x="150" fill="#a7a9ac"/>
+  <rect id="svg_5" height="150" width="150" y="0" x="225" fill="#d1d2d4"/>
+  <rect id="svg_6" height="150" width="150" y="75" x="150" fill="#939598"/>
+  <rect id="svg_7" height="75" width="150" y="150" x="75" fill="#a7a9ac"/>
+  <rect id="svg_8" height="75" width="75" y="0" x="375" fill="#a7a9ac"/>
+  <rect id="svg_9" height="75" width="75" y="75" x="375" fill="#bcbdc0"/>
+  <rect id="svg_10" height="75" width="150" y="150" x="300" fill="#a7a9ac"/>
+ </g>
+</svg>
