@@ -332,15 +332,14 @@ a:hover .assets-hed {
 	.logo { 
 		width: 340px;
 	}
-	.social {
-		float: right;
-	}
 	.assets {
+		margin-top: .25em;
 		width: 48.936170212766%;
 	}
 	.social {
 		padding-top: 1.5em;
 		float: right;
+		clear: none;
 	}
 	.social .subhed {
 		margin: 0 0 0 .35em;
