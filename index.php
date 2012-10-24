@@ -19,11 +19,11 @@
 	<div class="main">
 		<div>
 			<section class="topic">
-				<a href="#">
+				<a href="http://picture.responsiveimages.org">
 					<h1 class="subhed">What is the `picture` Element?</h1>
 					<p>The picture element is an image whose source content is determined by one or more CSS media queries.</p>
 
-					<b>The <code>picture</code> Specification</b>
+					<b>View the <code>picture</code> Specification</b>
 				</a>
 			</section>
 
@@ -32,12 +32,12 @@
 					<h1 class="subhed">What is the `srcset` attribute?</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero nibh, iaculis vestibulum interdum.</p>
 					
-					<b>The <code>srcset</code> Specification</b>
+					<b>View the <code>srcset</code> Specification</b>
 				</a>
 			</section>
 
 			<section class="topic">
-				<a href="#">
+				<a href="http://usecases.responsiveimages.org">
 					<h1 class="subhed">What are the use cases for each?</h1>
 					<p>Vehicula eget massa. Nam leo turpis, convallis eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					
@@ -65,7 +65,7 @@
 			<a href="#">
 				<img src="img/ricg-icon.png" class="assets-thumb">
 				<h1 class="assets-hed">Download the RICG Logos</h1>
-				<p>[TK: Encourage spreading the word] We’ve got a few guidelines for our logo—please read the usage agreement and follow them!</p>
+				<p>[TK: Encourage spreading the word] We’ve got a few guidelines for our logo—please read the usage agreement!</p>
 			</a>
 		</aside>
 		

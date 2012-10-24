@@ -39,7 +39,7 @@ table {
 }
 .doc-head {
 	text-align: center;
-	padding: 1% 15%;
+	padding: 1% 5%;
 	font-size: 1.15em;
 	line-height: 1.4;
 	text-shadow: 0 1px 0 #fff;
@@ -49,7 +49,7 @@ table {
 .logo {
 	display: block;
 	margin: 1em auto 0 auto;
-	width: 280px;
+	width: 220px;
 	max-width: 100%;
 }
 .logo img {
@@ -69,7 +69,9 @@ table {
 	overflow: auto;
 }
 .intro {
+	color: #333;
 	font-size: .85em;
+	font-weight: bold;
 }
 .topic {
 	float: left;
@@ -86,14 +88,11 @@ table {
 	display: block;
 }
 .topic p {
-	color: #444;
+	color: #222;
 	-webkit-transition: color .1s linear;
 	-moz-transition: color .1s linear;
 	-o-transition: color .1s linear;
 	transition: color .1s linear;
-}
-.topic a:hover p {
-	color: #333;
 }
 .topic b {
 	margin: 0;
@@ -126,7 +125,7 @@ table {
 	border-right: 1px solid rgba(0,0,0,.5);
 	color: #fff;
 	font: normal 1.2em/1 "DIN Condensed", sans-serif;
-	padding: .5em .25em .25em .25em;
+	padding: .5em .5em .25em .5em;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(0,0,0,.75);
 	text-transform: uppercase;
@@ -259,6 +258,9 @@ table tbody td {
 .social a:hover {
 	background-color: #d6342d;
 }
+.social a:active {
+	top: 0;
+}
 .twitter {
 	background-image: url(_img/twitter.png);
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYRJREFUOI2lk6+LVFEYht9zdkFwXWXNYlr8ARrXYjIYxLR/gLBJNNlsVptB4wSDSTC5IKjBMkEMYjAMWkSLIrKiGBaG530N3hmuOjsexhduOd+9z3m+j+9KkpJUNcb2EWAAfAC+AkPbm736qSRHJUnAtu3jDdCTwOfMCPAAeA68TLIk2yuAgU+2N+aBgRezoD34R9vXbF9SkrVeYdf29STLs2znQXuMV0nWJibv/ii+TXLZ9sEe+EIDdGR7tW9zdY8Xd4FnwC3gTgP46YS5nF+jGNt+VGu92G+/1rpP0rnuacmXKVjSjyS3a637Gz/eM6WU0VSqlDKWdO9/oR14+NtBkkPd/i2cbr+XpsbdTd9KKedt37T9fUHhQSmFv05b1mmO7U4muzsrwGBB9tbcXpIU21eAEeBG27vNw7K9AbxugN7PjN9/AllNciDJiSRbwOMG4Nj2jSRlnt0Z4Elj2wAPbZ/+V9fTG22vS9pMclbSMUmHJY0l7dRa3yQZStqutb5vGedPN9QerEMFL08AAAAASUVORK5CYII=);
@@ -283,14 +285,16 @@ table tbody td {
 	background-position: 0 1.5em;
 	float: left;
 	position: relative;
-	padding: .9em 0 0 4.5em;
+	padding: .9em 0 0 3.75em;
 }
 .assets a {
 	display: block;
 	position: static;
 }
 .assets-hed {
-	margin: .5em 0 0 0;
+	color: #333;
+	font-size: 1.05em;
+	margin: .4em 0 0 0;
 
 	-webkit-transition: color .1s linear;
 	-moz-transition: color .1s linear;
@@ -302,19 +306,22 @@ a:hover .assets-hed {
 }
 .assets p {
 	color: #333;
-	font-size: .85em;
+	font-size: .95em;
 	margin: .5em 0;
 }
 .assets-thumb {
 	position: absolute;
 	left: 0;
 	top: 1.25em;
-	width: 3.75em;
+	width: 3em;
 }
 
 @media screen and (min-width: 40em) {
+	.doc-head {
+		padding: 1% 15%;
+	}
 	.intro {
-		font-size: .85em;
+		font-size: 1em;
 	}
 	.tablist {
 		margin-top: 0;
@@ -342,7 +349,17 @@ a:hover .assets-hed {
 		clear: none;
 	}
 	.social .subhed {
-		margin: 0 0 0 .35em;
+		margin-right: 0;
+		margin-left: .5em;
+	}
+	.assets {
+		padding-left: 4.5em;
+	}
+	.assets-thumb {
+		position: absolute;
+		left: 0;
+		top: 1.25em;
+		width: 3.75em;
 	}
 }
 
