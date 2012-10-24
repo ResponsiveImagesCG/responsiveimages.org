@@ -62,20 +62,11 @@ table {
 	background: rgba(255,255,255,.8);
 	border: solid rgba(100,100,100, .2);
 	border-width: 1px 0;
+	float: left;
 	padding: 0 2.941176470588% 3em 2.941176470588%;
 }
 .main > div {
-	margin: 0 auto;
-	max-width: 1200px;
-    *zoom: 1;
-}
-.main > div:before,
-.main > div:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.main > div:after {
-    clear: both;
+	float: left;
 }
 .intro {
 	color: #333;
@@ -93,8 +84,9 @@ table {
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.topic a {
-	display: block;
+.topic:last-child {
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 2em;
 }
 .topic p {
 	color: #222;
@@ -113,11 +105,15 @@ table {
 	-o-transition: color .1s linear;
 	transition: color .1s linear;
 }
+.topic a {
+	font-weight: bold;
+}
 .topic a:hover b {
 	color: #d6342d;
 }
-.topic:last-child {
+.topic:nth-of-type(3n){
 	margin-right: none;
+	padding-bottom: 1.5em;
 }
 
 .subhed {
@@ -144,7 +140,11 @@ table {
 	-o-transition: background-color .1s linear;
 	transition: background-color .1s linear;
 }
-a:hover .subhed {
+.subhed a {
+	color: #fff;
+	font-weight: normal;
+}
+.subhed:hover {
 	background-color: #d6342d;
 }
 .tablist {
@@ -326,6 +326,11 @@ a:hover .assets-hed {
 }
 
 @media screen and (min-width: 40em) {
+	.main > div {
+		margin: 0 auto;
+		max-width: 1200px;
+		overflow: visible;
+	}
 	.doc-head {
 		padding: 1% 15%;
 	}
@@ -344,6 +349,9 @@ a:hover .assets-hed {
 	.topic {
 		width: 33.333333333333%;
 		padding-bottom: 2.5em;
+	}
+	.topic:nth-of-type(3n){
+		padding-bottom: 0;
 	}
 	.logo {
 		width: 340px;

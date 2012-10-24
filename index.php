@@ -13,40 +13,34 @@
 <body>
 	<header class="doc-head">
 		<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-		<p class="intro">Our goal is a markup-based means of delivering alternate image sources based on device capabilities, to prevent wasted bandwidth and optimize display for both screen and print.</p>
+		<p class="intro">We’re a group of web developers working towards a markup-based means of delivering alternate image sources based on device capabilities, to prevent wasted bandwidth and optimize display for both screen and print.</p>
 	</header>
 
 	<div class="main">
 		<div>
 			<section class="topic">
-				<a href="http://picture.responsiveimages.org">
-					<h1 class="subhed">What is the `picture` Element?</h1>
-					<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for 
-						an image. By using media queries, it gives developers control as to when and if those 
-						images are presented to the user.</p>
-					<b>View the <code>picture</code> Specification</b>
-				</a>
+				<h1 class="subhed"><a href="http://picture.responsiveimages.org">What is the `picture` Element?</a></h1>
+				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for 
+					an image. By using media queries, it gives developers control as to when and if those 
+					images are presented to the user.</p>
+				<a href="http://picture.responsiveimages.org" class="more">View the <code>picture</code> Specification</a>
 			</section>
 
 			<section class="topic">
-				<a href="http://dev.w3.org/html5/srcset/">
-					<h1 class="subhed">What is the `srcset` attribute?</h1>
-					<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that 
-						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
-						part of which may be used by the <code>picture</code> element.</p>
-					
-					<b>View the <code>srcset</code> Specification</b>
-				</a>
+				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
+				<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that 
+					provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
+					part of which may be used by the <code>picture</code> element.</p>
+				
+				<a href="http://dev.w3.org/html5/srcset/" class="more">View the <code>srcset</code> Specification</a>
 			</section>
 
-			<section class="topic">
-				<a href="http://usecases.responsiveimages.org">
-					<h1 class="subhed">What are the use cases for each?</h1>
-					<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues 
-						for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
-					
-					<b>View the Use Cases and Requirements</b>
-				</a>
+			<section class="topic">	
+				<h1 class="subhed"><a href="http://usecases.responsiveimages.org">What are the use cases for each?</a></h1>
+				<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues 
+					for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
+				
+				<a href="http://usecases.responsiveimages.org" class="more">View the Use Cases and Requirements</a>
 			</section>
 
 			<section id="issue-tracker">
