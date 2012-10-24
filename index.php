@@ -29,7 +29,7 @@
 			</section>
 
 			<section class="topic">
-				<a href="#">
+				<a href="http://dev.w3.org/html5/srcset/">
 					<h1 class="subhed">What is the `srcset` attribute?</h1>
 					<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that 
 						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
