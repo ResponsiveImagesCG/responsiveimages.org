@@ -21,7 +21,7 @@
 			<section class="topic">
 				<a href="http://picture.responsiveimages.org">
 					<h1 class="subhed">What is the `picture` Element?</h1>
-					<p>The picture element is an image whose source content is determined by one or more CSS media queries.</p>
+					<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for an image. By using media queries, it gives developers control as to when those images are presented to a user.</p>
 
 					<b>View the <code>picture</code> Specification</b>
 				</a>
