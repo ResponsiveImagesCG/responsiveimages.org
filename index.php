@@ -21,8 +21,9 @@
 			<section class="topic">
 				<a href="http://picture.responsiveimages.org">
 					<h1 class="subhed">What is the `picture` Element?</h1>
-					<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for an image. By using media queries, it gives developers control as to when those images are presented to a user.</p>
-
+					<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for 
+						an image. By using media queries, it gives developers control as to when and if those 
+						images are presented to the user.</p>
 					<b>View the <code>picture</code> Specification</b>
 				</a>
 			</section>
@@ -30,7 +31,9 @@
 			<section class="topic">
 				<a href="#">
 					<h1 class="subhed">What is the `srcset` attribute?</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero nibh, iaculis vestibulum interdum.</p>
+					<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that 
+						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
+						part of which may be used by the <code>picture</code> element.</p>
 					
 					<b>View the <code>srcset</code> Specification</b>
 				</a>
@@ -39,9 +42,10 @@
 			<section class="topic">
 				<a href="http://usecases.responsiveimages.org">
 					<h1 class="subhed">What are the use cases for each?</h1>
-					<p>Vehicula eget massa. Nam leo turpis, convallis eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues 
+						for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
 					
-					<b>Use Cases and Requirements</b>
+					<b>View the Use Cases and Requirements</b>
 				</a>
 			</section>
 
@@ -65,7 +69,7 @@
 			<a href="#">
 				<img src="img/ricg-icon.png" class="assets-thumb">
 				<h1 class="assets-hed">Download the RICG Logos</h1>
-				<p>[TK: Encourage spreading the word] We’ve got a few guidelines for our logo—please read the usage agreement!</p>
+				<p>Want to show your support for the goals of the RICG? Use our logo!</p>
 			</a>
 		</aside>
 		

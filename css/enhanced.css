@@ -294,7 +294,7 @@ table tbody td {
 .assets-hed {
 	color: #333;
 	font-size: 1.05em;
-	margin: .4em 0 0 0;
+	margin: .4em 0 .35em 0;
 
 	-webkit-transition: color .1s linear;
 	-moz-transition: color .1s linear;
@@ -307,7 +307,7 @@ a:hover .assets-hed {
 .assets p {
 	color: #333;
 	font-size: .95em;
-	margin: .5em 0;
+	margin: .1em 0;
 }
 .assets-thumb {
 	position: absolute;
