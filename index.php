@@ -13,7 +13,7 @@
 <body>
 	<header class="doc-head">
 		<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-		<p class="intro">We’re a group of web developers working towards a markup-based means of delivering alternate image sources based on device capabilities, to prevent wasted bandwidth and optimize display for both screen and print.</p>
+		<p class="intro">We’re <a href="http://www.w3.org/community/respimg/">a group of developers</a> working towards a markup-based means of delivering alternate image sources based on device capabilities, to prevent wasted bandwidth and optimize display for both screen and print.</p>
 	</header>
 
 	<div class="main">
