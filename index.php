@@ -45,16 +45,12 @@
 
 			<section id="issue-tracker">
 				<h1 class="a11y">Issue Tracker</h1>
-				<?
-					$openIssues = get_issues( "open" );
-					$closedIssues = get_issues( "closed" );
-				?>
 				<div id="issues-open">
-					<? print_issues('open', $openIssues)?>
+					<? print_issues('open', get_issues( 'open' ))?>
 				</div>
 
 				<div id="issues-closed" class="closed">
-					<? print_issues('closed', $closedIssues)?>
+					<? print_issues('closed', get_issues( 'closed' ))?>
 				</div>
 			</section>
 		</div>
