@@ -36,7 +36,8 @@ function days_passed( $d ) {
  * @return array         An array of issues matching the state requested.
  */
 function fetch_issues( $state ) {
-	$repos = $GLOBALS["repos"];
+	global $config;
+	$repos = $config['repos'];
 	$issues = array();
 
 	foreach( $repos as $url ) {
@@ -57,19 +58,21 @@ function fetch_issues( $state ) {
 		$newiss = json_decode( $json );
 		$issues = is_array($newiss) ? array_merge( $issues, $newiss ) : $issues;
 	}
+
+	file_put_contents($config["{$state}CacheFile"], serialize($issues));
 	return $issues;
 }
 
 function get_issues( $state ) {
-	$cacheFile = "cache/{$state}-issues.cache";
+	global $config;
+	$issues = array();
+
 	// Check for a cached copy.
-	if( file_exists($cacheFile) && time() - filemtime($cacheFile) < 3600 ) {
-		if($issues = unserialize(file_get_contents($cacheFile))) {
+	if( file_exists($config["{$state}CacheFile"]) ) {
+		if($issues = unserialize(file_get_contents($config["{$state}CacheFile"]))) {
 			return $issues;
 		}
 	}
-	$issues = fetch_issues( $state );
-	file_put_contents($cacheFile, serialize($issues));
 	return $issues;
 }
 
