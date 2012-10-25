@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>ResponsiveImages.org</title>
 	<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
-
+	<meta property="og:description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="css/enhanced.css" media="only all">
