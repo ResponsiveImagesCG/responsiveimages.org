@@ -13,7 +13,7 @@
 <body>
 	<header class="doc-head">
 		<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-		<p class="intro">We’re <a href="http://www.w3.org/community/respimg/">a group of developers</a> working towards a markup-based means of delivering alternate image sources based on device capabilities, to prevent wasted bandwidth and optimize display for both screen and print.</p>
+		<p class="intro">We’re a <a href="http://www.w3.org/community/respimg/">group of developers</a> working towards a markup-based means of delivering alternate image sources based on device capabilities.</p>
 	</header>
 
 	<div class="main">
@@ -60,7 +60,7 @@
 	<div class="doc-foot">
 
 		<aside class="assets">
-			<a href="#">
+			<a href="RICG-Logos.zip">
 				<img src="img/ricg-icon.png" class="assets-thumb">
 				<h1 class="assets-hed">Download the RICG Logos</h1>
 				<p>Want to show your support for the goals of the RICG? Use our logo!</p>

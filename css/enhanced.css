@@ -69,9 +69,15 @@ table {
 	float: left;
 }
 .intro {
-	color: #333;
+	color: #444;
 	font-size: .85em;
 	font-weight: bold;
+}
+.intro a {
+	color: #931f15;
+}
+.intro a:hover {
+	color: #d6342d;
 }
 .topic {
 	float: left;
@@ -326,10 +332,15 @@ a:hover .assets-hed {
 }
 
 @media screen and (min-width: 40em) {
+	.main {
+		float: none;
+		overflow: auto;
+	}
 	.main > div {
 		margin: 0 auto;
 		max-width: 1200px;
 		overflow: visible;
+		float: none;
 	}
 	.doc-head {
 		padding: 1% 15%;
