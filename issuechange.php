@@ -6,5 +6,6 @@ if($svr == "207.97.227.253" || $svr == "50.57.128.197" || $svr == "108.171.174.1
 	fetch_issues('open');
 	fetch_issues('closed');
 }else{
+	//otherwise, it is: Forbidden 403! 
 	header(':', true, 403);
 }
