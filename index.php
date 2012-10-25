@@ -6,6 +6,13 @@
 	<title>ResponsiveImages.org</title>
 	<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
 
+	<meta property="og:url" content="http://responsiveimages.org">
+	<meta property="og:site_name" content="Responsive Images Community Group">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Responsive Images Community Group">
+	<meta property="og:image" content="http://responsiveimages.org/img/ricg-icon.png">
+	<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
+
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="css/enhanced.css" media="only all">
