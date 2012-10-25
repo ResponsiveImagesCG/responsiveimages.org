@@ -20,38 +20,41 @@
 		<div>
 			<section class="topic">
 				<h1 class="subhed"><a href="http://picture.responsiveimages.org">What is the `picture` Element?</a></h1>
-				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for 
-					an image. By using media queries, it gives developers control as to when and if those 
+				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
+					an image. By using media queries, it gives developers control as to when and if those
 					images are presented to the user.</p>
 				<a href="http://picture.responsiveimages.org" class="more">View the <code>picture</code> Specification</a>
 			</section>
 
 			<section class="topic">
 				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
-				<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that 
+				<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that
 					provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
 					part of which may be used by the <code>picture</code> element.</p>
-				
+
 				<a href="http://dev.w3.org/html5/srcset/" class="more">View the <code>srcset</code> Specification</a>
 			</section>
 
-			<section class="topic">	
+			<section class="topic">
 				<h1 class="subhed"><a href="http://usecases.responsiveimages.org">What are the use cases for each?</a></h1>
-				<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues 
+				<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues
 					for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
-				
+
 				<a href="http://usecases.responsiveimages.org" class="more">View the Use Cases and Requirements</a>
 			</section>
 
 			<section id="issue-tracker">
 				<h1 class="a11y">Issue Tracker</h1>
-
+				<?
+					$openIssues = get_issues( "open" );
+					$closedIssues = get_issues( "closed" );
+				?>
 				<div id="issues-open">
-					<?php get_issues( "open" ); ?>
+					<? print_issues('open', $openIssues)?>
 				</div>
 
 				<div id="issues-closed" class="closed">
-					<?php get_issues( "closed" ); ?>
+					<? print_issues('closed', $closedIssues)?>
 				</div>
 			</section>
 		</div>
@@ -66,7 +69,7 @@
 				<p>Want to show your support for the goals of the RICG? Use our logo!</p>
 			</a>
 		</aside>
-		
+
 		<nav class="social">
 			<h1 class="a11y">Share this page</h1>
 			<a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a>
