@@ -1,77 +1,116 @@
 <?php
-	// Disclaimer: I am not a PHP developer.
-	include_once( "issues-opt.php" );
 
-	function days_passed( $d ) {
-		@$days = floor( ( time() - strtotime( $d ) ) / 86400 );
+include_once 'issues-opt.php';
 
-		switch ( $days ) {
-			case 0 : 
-				return "Today";
-				break;
-			case 1 :
-				return "Yesterday";
-				break;
-			default: 
-				return $days . " days ago";
-		}
-	};
+/**
+ * Return a string stating how long ago something happened.
+ *
+ * @param  integer $d formatted date stamp
+ *
+ * @return string
+ */
+function days_passed( $d ) {
+	if( empty( $d ) ) {
+		return "";
+	}
 
-	function get_issues( $state ) {
-		$repos = $GLOBALS["repos"];
-		$issues = array();
-		$inum = 0;
+	@$days = floor( ( time() - strtotime( $d ) ) / 86400 );
 
-		foreach( $repos as $url ) {
-			// Initializing curl
-			$ch = curl_init( $url . ( $state ? '?state=' . $state : '') );
+	switch ( $days ) {
+		case 0 :
+			return "Today";
+			break;
+		case 1 :
+			return "Yesterday";
+			break;
+		default:
+			return $days . " days ago";
+	}
+};
 
-			// Configuring curl options
-			$options = array(
-				CURLOPT_RETURNTRANSFER => true,
-				CURLOPT_USERPWD => $GLOBALS['gh_username'] . ":" . $GLOBALS['gh_pass'],
-				CURLOPT_HTTPHEADER => array('Content-type: application/json')
-			);
-			 
-			// Setting curl options
-			curl_setopt_array( $ch, $options );
+/**
+ * Fetch the issues for a given state.
+ *
+ * @param  string $state The state of bugs we're interested in.
+ *
+ * @return array         An array of issues matching the state requested.
+ */
+function fetch_issues( $state ) {
+	$repos = $GLOBALS["repos"];
+	$issues = array();
 
+	foreach( $repos as $url ) {
+		// Initializing curl
+		$ch = curl_init( $url . ( $state ? '?state=' . $state : '') );
 
-			// Getting results
-			$newiss = json_decode( curl_exec($ch) );
-			@$issues = array_merge( $issues, $newiss );
-			$inum = $inum + count( $issues );
-		}
+		// Configuring curl options
+		$options = array(
+			CURLOPT_RETURNTRANSFER => true,
+		);
 
-		if( $inum !== 0 ) {
-			print '<h2 class="issuehed">' . $inum . ' ' . $state . ' issue' . ( $inum == 1 ? '' : 's' ) . '</h2>
-				<table>
-					<thead>
-						<tr>
-							<th scope="col">Issue</th>
-							<th scope="col">Description</th>
-							<th scope="col">Author</th>
-							<th scope="col">Last Modified</th>
-						</tr>
-					</thead>
-					<tbody>';
+		// Setting curl options
+		curl_setopt_array( $ch, $options );
 
-		foreach( $issues as $i ) {
-			print("<tr>");
-			print("<td>" . $i->number . "</td>");
-			print('<th scope="row"><a href="' . $i->html_url . '">'. $i->title );
-			if( $i->comments > 0 ) {
-				print(' <b class="comments">' . $i->comments . ' comment' . ( $i->comments == 1 ? '' : 's' ) . '</b>');
-			}
-			print('</a></th>');
-			//print('<td class="label">' . "Enhancement" . '</td>');
-			print('<td><a href="https://github.com/' . $i->user->login . '">'. $i->user->login . '</a></td>');
-			print('<td>' . days_passed( $i->updated_at ) . '</td>');
-			print "</tr>";
-		}
+		$json = curl_exec($ch);
 
-		print '</tbody>
-			</table>';
+		// Getting results
+		$newiss = json_decode( $json );
+		$issues = is_array($newiss) ? array_merge( $issues, $newiss ) : $issues;
+	}
+	return $issues;
+}
+
+function get_issues( $state ) {
+	$cacheFile = "cache/{$state}-issues.cache";
+	// Check for a cached copy.
+	if( file_exists($cacheFile) && time() - filemtime($cacheFile) < 3600 ) {
+		if($issues = unserialize(file_get_contents($cacheFile))) {
+			return $issues;
 		}
 	}
-?>
+	$issues = fetch_issues( $state );
+	file_put_contents($cacheFile, serialize($issues));
+	return $issues;
+}
+
+/**
+ * Print a table of issues.
+ *
+ * @param  array $issues An array of issues to display.
+ *
+ * @return void
+ */
+function print_issues($state, $issues)
+{
+	$icount = count($issues);
+	if( $icount ) {
+		?><h2 class="issuehed"><?=$icount?> <?=$state?> issue<?=$icount == 1 ? '' : 's'?></h2>
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Issue</th>
+						<th scope="col">Description</th>
+						<th scope="col">Author</th>
+						<th scope="col">Last Modified</th>
+					</tr>
+				</thead>
+				<tbody>
+		<? foreach( $issues as $i ):?>
+			<tr>
+				<td><?=$i->number?></td>
+				<th scope="row">
+					<a href="<?=$i->html_url?>"><?=$i->title?>
+					<?if( $i->comments > 0 ):?><b class="comments"><?=$i->comments?> comment<?=$i->comments == 1 ? '' : 's' ?></b><?endif?>
+					</a>
+				</th>
+				<?//<td class="label">Enhancement</td>?>
+				<td><a href="https://github.com/<?$i->user->login?>"><?=$i->user->login?></a></td>
+				<td><?=days_passed( $i->updated_at )?></td>
+			</tr>
+		<?endforeach;?>
+
+			</tbody>
+		</table>
+		<?
+	}
+}
