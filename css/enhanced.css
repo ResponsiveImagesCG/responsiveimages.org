@@ -295,6 +295,7 @@ table tbody td {
 	background-position: center center;
 }
 
+
 .assets {
 	background-repeat: no-repeat;
 	background-position: 0 1.5em;
@@ -330,6 +331,68 @@ a:hover .assets-hed {
 	top: 1.25em;
 	width: 3em;
 }
+
+/*
+DEMO Pages styles
+Added by Marcos Caceres
+*/
+.demosource pre {
+	box-shadow: inset 0 0 .5em rgba(0,0,0,.75);
+}
+
+.picturedemo h1 {
+	white-space: nowrap;
+	margin-bottom: 2em;
+	width: auto;
+	text-overflow: ellipsis;
+}
+
+a.navlink {
+	border-bottom: .2em solid #841d1a;
+	-webkit-transition: border .1s linear;
+	-moz-transition: border .1s linear;
+	-o-transition: border .1s linear;
+	transition: border .1s linear;
+	margin-right: 1em;
+}
+
+a.navlink:hover {
+	color: #333;
+	border-bottom: .2em solid #d6342d;
+}
+
+.picturedemo .description {
+	font-style:italic;
+}
+
+.picturedemo h1 span {
+	border-bottom: .2em solid #DDD;
+}
+
+.picturedemo figure {
+	text-align: center;
+}
+
+
+.demosource pre{
+	border: 1px solid red;
+	overflow: hidden;
+	margin: 0 0 !important;
+}
+.demosource pre code{
+	overflow: hidden;
+	margin: 0 0 !important;
+
+}
+
+.demosource code{
+ white-space:pre-wrap !important;       
+ word-wrap: break-word !important;
+}
+
+/*
+End Demo Pages styles
+*/
 
 @media screen and (min-width: 40em) {
 	.main {
@@ -420,3 +483,4 @@ a:hover .assets-hed {
     font-weight: normal;
     font-style: normal;
 }
+
