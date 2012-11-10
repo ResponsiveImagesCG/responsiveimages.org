@@ -19,36 +19,84 @@
 </head>
 <body>
 	<header class="doc-head">
-		<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-		<p class="intro">We’re a <a href="http://www.w3.org/community/respimg/">group of developers</a> working towards a markup-based means of delivering alternate image sources based on device capabilities.</p>
+			<div class="col-a">
+				<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
+				<p class="intro">We’re a group of developers working towards a markup-based means of delivering alternate image sources based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. </p>
+				<a href="http://www.w3.org/community/respimg/" class="subhed join">Join Us!</a>
+			</div>
+			<div data-picture class="col-b">
+
+			</div>
 	</header>
 
 	<div class="main">
 		<div>
-			<section class="topic">
-				<h1 class="subhed"><a href="http://picture.responsiveimages.org">What is the `picture` Element?</a></h1>
+			<section class="col-two topic">
+				<h1 class="subhed">What is the `picture` Element?</h1>
 				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
-					an image. By using media queries, it gives developers control as to when and if those
-					images are presented to the user.</p>
+				an image. By using media queries, it gives developers control as to when and if those
+				images are presented to the user.</p>
+				
+				<figure class="snippet">
+					<figcaption class="codehed">Sample Markup for `picture`</figcaption>
+					<code>
+<pre>
+&lt;picture&gt;
+    &lt;source src="image-small.jpg"&gt;
+    &lt;source media="(min-width: 20em)" src="image-mid.jpg"&gt;
+    &lt;source media="(min-width: 40em)" src="image-large.jpg"&gt;
+&lt;/picture&gt;
+</pre>
+					</code>
+				</figure>
 				<a href="http://picture.responsiveimages.org" class="more">View the <code>picture</code> Specification</a>
 			</section>
 
-			<section class="topic">
-				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
+			<section class="col-two topic">
+				<h1 class="subhed">What is the `srcset` attribute?</h1>
 				<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that
-					provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
-					part of which may be used by the <code>picture</code> element.</p>
+						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
+						part of which can be used by the <code>picture</code> element.</p>
+
+				<figure class="snippet">
+					<figcaption class="codehed">Sample Markup for `srcset`</figcaption>
+					<code>
+<pre>
+&lt;img src="image-small.jpg"
+     srcset="image-mid.jpg 600w, image-large 800w"&gt;
+</pre>
+					</code>
+				</figure>
 
 				<a href="http://dev.w3.org/html5/srcset/" class="more">View the <code>srcset</code> Specification</a>
 			</section>
 
-			<section class="topic">
-				<h1 class="subhed"><a href="http://usecases.responsiveimages.org">What are the use cases for each?</a></h1>
-				<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues
-					for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
+			<div class="subtopics">
+				<section class="col-three topic">
+					<h1 class="subhed"><a href="http://usecases.responsiveimages.org">What are the use cases for each?</a></h1>
+					<p>The <em>Use Cases and Requirements</em> document outlines the goals, objectives, and potential issues
+						for end users that must be solved by the <code>picture</code> and <code>srcset</code> extension specifications.</p>
 
-				<a href="http://usecases.responsiveimages.org" class="more">View the Use Cases and Requirements</a>
-			</section>
+					<a href="http://usecases.responsiveimages.org" class="more">View the Use Cases and Requirements</a>
+				</section>
+
+				<section class="col-three topic">
+					<h1 class="subhed">Get Involved</h1>
+					<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
+						an image. By using media queries, it gives developers control as to when and if those
+						images are presented to the user.</p>
+					<a href="http://w3c.responsiveimages.org" class="more">View the <code>picture</code> Specification</a>
+				</section>
+
+				<section class="col-three topic">
+					<h1 class="subhed">Try it now!</h1>
+					<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that
+						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
+						part of which may be used by the <code>picture</code> element.</p>
+
+					<a href="http://dev.w3.org/html5/srcset/" class="more">View the <code>srcset</code> Specification</a>
+				</section>
+			</div>
 
 			<section id="issue-tracker">
 				<h1 class="a11y">Issue Tracker</h1>

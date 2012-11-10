@@ -40,11 +40,10 @@ table {
 }
 .doc-head {
 	text-align: center;
-	padding: 1% 5%;
 	font-size: 1.15em;
 	line-height: 1.4;
+	padding: 1.5em 2.941176470588% 2.5em 2.941176470588%;
 	text-shadow: 0 1px 0 #fff;
-	max-width: 760px;
 	margin: 0 auto;
 }
 .logo {
@@ -71,7 +70,9 @@ table {
 .intro {
 	color: #444;
 	font-size: .85em;
-	font-weight: bold;
+	font-weight: 500;
+	max-width: 40em;
+	margin: .5em auto 1.5em auto;
 }
 .intro a {
 	color: #931f15;
@@ -83,7 +84,7 @@ table {
 	float: left;
 	font-size: .95em;
 	line-height: 1.35;
-	padding: .5em 1% 0 1%;
+	padding: .5em 1% 2.5em 1%;
 	width: auto;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -111,8 +112,12 @@ table {
 	-o-transition: color .1s linear;
 	transition: color .1s linear;
 }
-.topic a {
+.topic .more {
+	clear: both;
+	display: block;
+	float: left;
 	font-weight: bold;
+	margin: 1em 0 0 0;
 }
 .topic a:hover b {
 	color: #d6342d;
@@ -121,7 +126,37 @@ table {
 	margin-right: none;
 	padding-bottom: 1.5em;
 }
-
+.snippet {
+	background: #fff;
+	background: rgba(255,255,255,.8);
+	border: 1px solid #eee;
+	display: block;
+	float: left;
+	margin: .25em 1.5% 0 1.5%;
+	width: 97%;
+	padding: 0;
+}
+.snippet code {
+	color: #222;
+	display: block;
+	padding: 0 3%;
+	font-size: .95em;
+	line-height: 1.5;
+}
+.snippet pre {
+	max-width: 100%;
+	display: block;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+.codehed {
+	background: #a3a3a3;
+	color: #fff;
+	display: block;
+	font: normal 1.05em/1 "DIN Condensed", sans-serif;
+	padding: .5em 3% .25em 3%;	
+	text-transform: uppercase;
+}
 .subhed {
 	background-color: #841d1a;
 	background-image: -webkit-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
@@ -135,7 +170,8 @@ table {
 	border-bottom: 1px solid rgba(0,0,0,.5);
 	border-right: 1px solid rgba(0,0,0,.5);
 	color: #fff;
-	font: normal 1.2em/1 "DIN Condensed", sans-serif;
+	clear: both;
+	font: normal 1.2em/1.2 "DIN Condensed", sans-serif;
 	padding: .5em .5em .25em .5em;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(0,0,0,.75);
@@ -152,6 +188,17 @@ table {
 }
 .subhed:hover {
 	background-color: #d6342d;
+}
+.join,
+.join:hover {
+	background-color: #d6342d;
+	color: #fff;
+	font-size: 1.2em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+}
+.join:hover {
+	background-color: #e76862;
 }
 .tablist {
 	clear: both;
@@ -331,20 +378,19 @@ a:hover .assets-hed {
 	top: 1.25em;
 	width: 3em;
 }
-
 @media screen and (min-width: 40em) {
 	.main {
 		float: none;
+		clear: both;
 		overflow: auto;
 	}
+	.doc-head,
 	.main > div {
+		clear: both;
 		margin: 0 auto;
 		max-width: 1200px;
 		overflow: visible;
 		float: none;
-	}
-	.doc-head {
-		padding: 1% 15%;
 	}
 	.intro {
 		font-size: 1em;
@@ -359,10 +405,22 @@ a:hover .assets-hed {
 		width: auto;
 	}
 	.topic {
-		width: 33.333333333333%;
 		padding-bottom: 2.5em;
 	}
-	.topic:nth-of-type(3n){
+	.subtopics {
+		clear: both;
+	}
+	.col-two {
+		width: 50%;
+	}
+	.col-three {
+		width: 33.333333333333%;
+	}
+	.col-three:first-child {
+		clear: left;
+	}
+	.topic:last-child {
+		border-bottom: none;
 		padding-bottom: 0;
 	}
 	.logo {
@@ -389,6 +447,31 @@ a:hover .assets-hed {
 		left: 0;
 		top: 1.25em;
 		width: 3.75em;
+	}
+}
+@media screen and (min-width: 64em) {
+	.doc-head {
+		margin: 0 auto;
+		overflow: hidden;
+		padding-top: 4em;
+		background: url(_img/devices.png) 90% center no-repeat;
+		background-size: 50% auto;
+	}
+	.doc-head .logo {
+		width: 80%;
+		padding: 0;
+		margin: -.25em auto .25em auto;
+	}
+	.col-a {
+		padding: 0;
+		margin: 0 0 0 1%;
+		width: 31.25%; 
+		float: left;
+	}
+	.col-b {
+		margin-right: 1%;
+		float: right;
+		height: 30px;
 	}
 }
 
