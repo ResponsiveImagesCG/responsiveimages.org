@@ -378,6 +378,45 @@ a:hover .assets-hed {
 	top: 1.25em;
 	width: 3em;
 }
+
+.demo {
+	clear: both;
+	float: left;
+	padding: 1.5em 0;
+}
+.demo:first-child {
+	margin-top: 2.5em;
+}
+.demo-hed {
+	color: #841d1a;
+	font: normal 1.4em/1 "DIN Condensed", sans-serif;
+	margin: .5em 0;
+	text-transform: uppercase;
+}
+.demo-thumb {
+	float: left;
+	position: relative;
+	height: auto;
+}
+.demo-thumb img {
+	border: .35em solid #fff;
+	box-shadow: 0 0 .5em rgba(0,0,0,.1);
+}
+.demo-thumb img {
+	float: left;
+}
+.demo-thumb figcaption {
+	background: rgba(255,255,255,.8);
+	font-size: .95em;
+	height: 97.5%;
+	padding: .35em 3em 0 1em;
+	position: absolute;
+	right: -.35em;
+	top: 0;
+}
+.demo-thumb li {
+	padding: .1em 0;
+}
 @media screen and (min-width: 40em) {
 	.main {
 		float: none;
@@ -469,9 +508,9 @@ a:hover .assets-hed {
 		float: left;
 	}
 	.col-b {
-		margin-right: 1%;
+		margin: 0 1% 0 0;
 		float: right;
-		height: 30px;
+		width: 64.583333333333%;
 	}
 }
 

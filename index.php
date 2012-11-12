@@ -19,14 +19,11 @@
 </head>
 <body>
 	<header class="doc-head">
-			<div class="col-a">
-				<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-				<p class="intro">We’re a group of developers working towards a markup-based means of delivering alternate image sources based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. </p>
-				<a href="http://www.w3.org/community/respimg/" class="subhed join">Join Us!</a>
-			</div>
-			<div data-picture class="col-b">
-
-			</div>
+		<div class="col-a">
+			<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
+			<p class="intro">We’re a group of developers working towards a markup-based means of delivering alternate image sources based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. </p>
+			<a href="http://www.w3.org/community/respimg/" class="subhed join">Join Us!</a>
+		</div>
 	</header>
 
 	<div class="main">
