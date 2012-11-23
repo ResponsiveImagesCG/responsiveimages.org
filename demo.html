@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>ResponsiveImages.org</title>
 	<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
+
 	<meta property="og:url" content="http://responsiveimages.org">
 	<meta property="og:site_name" content="Responsive Images Community Group">
 	<meta property="og:type" content="website">
@@ -12,18 +13,28 @@
 	<meta property="og:image" content="http://responsiveimages.org/img/ricg-icon.png">
 	<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
 
-
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="css/enhanced.css" media="only all">
 </head>
 <body>
+
 	<header class="doc-head">
-		<div class="col-a">
+		<div class="col-a demo-intro">
 			<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-			<p class="intro">The demos on this page require that you have the working <a href="https://github.com/ResponsiveImagesCG/RespImg-WebCore">Chromium build</a> by <a href="https://twitter.com/yoavweiss">Yoav Weiss</a>. Instructions are on the demo pages.</p>
-			<a href="http://www.w3.org/community/respimg/" class="subhed join">Join Us!</a>
+			<p class="intro">The demos on this page require that you have the working <a href="http://downloads.responsiveimages.org">Chromium build</a> by Yoav Weiss. Instructions are on the demo pages.</p>
+			<a href="http://www.w3.org/community/respimg/" class="subhed go">Get Chromium</a>
 		</div>
+	<figure class="col-b live-demo">
+			<picture>
+				<source srcset="img/devices-sm.png 1x, img/devices.png 2x">
+				<source media="(min-width: 40em)" src="img/devices.png">
+				<noscript>
+					<img src="img/devices-sm.png">
+				</noscript>
+			</picture>
+			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern. <a href="#" class="more">Here are some other sites!</a></figcaption>
+		</figure>
 	</header>
 
 	<div class="main">
@@ -91,6 +102,8 @@
 
 	</div>
 	<script src="js/tabs.js"></script>
+	<script src="js/picturefill.js"></script>
+
 	<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName', 'responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
 </body>
 </html>

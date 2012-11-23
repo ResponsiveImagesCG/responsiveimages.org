@@ -11,7 +11,7 @@ html, body {
 }
 a {
 	color: #6f201b;
-	text-decoration: none;
+	text-decoration: underline;
 	position: relative;
 	-webkit-transition: color .1s linear, background-color .1s linear;
 	-moz-transition: color .1s linear, background-color .1s linear;
@@ -20,6 +20,7 @@ a {
 }
 a:hover {
 	color: #d6342d;
+	text-decoration: none;
 }
 a:active {
 	top: 1px;
@@ -38,11 +39,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0 0;
 }
+
+dd {
+	margin: 0 0 .75em 0;
+}
+dt.assets-hed {
+	margin: 0;
+	padding: .25em 0 0 0;
+}
 .doc-head {
 	text-align: center;
 	font-size: 1.15em;
 	line-height: 1.4;
-	padding: 1.5em 2.941176470588% 2.5em 2.941176470588%;
+	padding: .25em 2.941176470588% .75em 2.941176470588%;
 	text-shadow: 0 1px 0 #fff;
 	margin: 0 auto;
 }
@@ -68,7 +77,6 @@ table {
 	float: left;
 }
 .intro {
-	color: #444;
 	font-size: .85em;
 	font-weight: 500;
 	max-width: 40em;
@@ -92,7 +100,7 @@ table {
 	box-sizing: border-box;
 }
 .topic:last-child {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #d6d6d6;
 	margin-bottom: 2em;
 }
 .topic p {
@@ -118,9 +126,10 @@ table {
 	float: left;
 	font-weight: bold;
 	margin: 1em 0 0 0;
+	text-decoration: underline;
 }
-.topic a:hover b {
-	color: #d6342d;
+.topic a:hover {
+	text-decoration: none;
 }
 .topic:nth-of-type(3n){
 	margin-right: none;
@@ -184,21 +193,41 @@ table {
 }
 .subhed a {
 	color: #fff;
+	text-decoration: none;
 	font-weight: normal;
 }
 .subhed:hover {
 	background-color: #d6342d;
 }
-.join,
-.join:hover {
+.go {
+	clear: both;
+	display: inline-block;
 	background-color: #d6342d;
 	color: #fff;
 	font-size: 1.2em;
 	padding-left: 1.25em;
 	padding-right: 1.25em;
+	text-decoration: none;
 }
-.join:hover {
+.go:hover {
+	color: #fff;
 	background-color: #e76862;
+}
+.demo-intro {
+	position: relative;
+}
+.demo-intro:before {
+	content: " ";
+	display: block;
+	height: 90px;
+	position: absolute;
+	right: 50%;
+	bottom: -25px;
+	padding-right: 100px;
+	width: 95px;
+}
+.demo-intro .go {
+	width: 6em;
 }
 .tablist {
 	clear: both;
@@ -353,6 +382,7 @@ table tbody td {
 .assets a {
 	display: block;
 	position: static;
+	text-decoration: none;
 }
 .assets-hed {
 	color: #333;
@@ -393,6 +423,9 @@ a:hover .assets-hed {
 	margin: .5em 0;
 	text-transform: uppercase;
 }
+.demo-hed a {
+	text-decoration: none;
+}
 .demo-thumb {
 	float: left;
 	position: relative;
@@ -417,7 +450,54 @@ a:hover .assets-hed {
 .demo-thumb li {
 	padding: .1em 0;
 }
-@media screen and (min-width: 40em) {
+
+.live-demo {
+	margin: 0;
+	padding: 1.5em 0 .75em 0;
+}
+.live-demo .more {
+	display: block;
+	font-weight: bold;
+}
+.live-demo img {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.live-demo figcaption {
+	font-size: .8em;
+	line-height: 1.3;
+}
+.demo-intro:before,
+.chromium {
+	background: url(_img/chromium.png) right top no-repeat;
+	padding-right: 100px;
+	min-height: 100px;
+	background-size: 90px;
+}
+.demo-intro:before,
+.doc-head .chromium {
+	background-position: left bottom;
+}
+picture {
+	display: block;
+	position: relative;
+	float: right;
+}
+.pf-pref {
+	background: #fff;
+	background: rgba(255,255,255,.7);
+	position: absolute;
+	color: #72150e;
+	top: 0;
+	right: 0;
+	font-size: .85em;
+	border: 1px solid #ccc;
+	z-index: 2;
+	text-decoration: none;
+	padding: 0 .35em;
+	border-radius: .25em;
+}
+@media screen and (min-width: 50em) {
 	.main {
 		float: none;
 		clear: both;
@@ -432,7 +512,7 @@ a:hover .assets-hed {
 		float: none;
 	}
 	.intro {
-		font-size: 1em;
+		font-size: .85em;
 	}
 	.tablist {
 		margin-top: 0;
@@ -462,8 +542,11 @@ a:hover .assets-hed {
 		border-bottom: none;
 		padding-bottom: 0;
 	}
+	.doc-head .intro {
+		font-size: 1em;
+	}
 	.logo {
-		width: 340px;
+		width: 280px;
 	}
 	.assets {
 		margin-top: .25em;
@@ -488,31 +571,66 @@ a:hover .assets-hed {
 		width: 3.75em;
 	}
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 53.75em) {
 	.doc-head {
 		margin: 0 auto;
 		overflow: hidden;
-		padding-top: 4em;
-		background: url(_img/devices.png) 90% center no-repeat;
-		background-size: 50% auto;
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
 	}
 	.doc-head .logo {
-		width: 80%;
+		width: 75%;
 		padding: 0;
-		margin: -.25em auto .25em auto;
+		margin: .5em auto .25em auto;
+	}
+	.doc-head .intro {
+		padding-top: .25em;
+		font-size: .95em;
 	}
 	.col-a {
 		padding: 0;
 		margin: 0 0 0 1%;
-		width: 31.25%; 
+		width: 38.583333333333%; 
 		float: left;
 	}
 	.col-b {
 		margin: 0 1% 0 0;
 		float: right;
+		width: 55.25%;
+	}
+
+	.demo .col-a {
+		padding: 0;
+		margin: 0 0 0 1%;
+		width: 31.25%; 
+		float: left;
+	}
+	.demo .col-b {
+		margin: 0 1% 0 0;
+		float: right;
 		width: 64.583333333333%;
 	}
+	.live-demo {
+		padding: 0;
+	}
+	.live-demo img {
+		max-width: 100%;
+	}
 }
+@media screen and (min-width: 74em) {
+	.col-a {
+		padding: 0;
+	}
+	.live-demo img {
+		max-width: 90%;
+	}
+	.doc-head .intro {
+		margin: 1em 1.5em 1.5em 1.5em;
+		padding: 0;
+		font-size: 1.05em;
+	}
+}
+
 
 @font-face {
     font-family: 'Proxima Nova';
