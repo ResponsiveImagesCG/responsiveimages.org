@@ -423,6 +423,12 @@ a:hover .assets-hed {
 	margin: .5em 0;
 	text-transform: uppercase;
 }
+.demo address {
+	color: #777;
+	font: normal 1em/1 "DIN Condensed", sans-serif;
+	text-transform: uppercase;
+	margin: 0 0 1.5em 0;
+}
 .demo-hed a {
 	text-decoration: none;
 }
@@ -430,13 +436,18 @@ a:hover .assets-hed {
 	float: left;
 	position: relative;
 	height: auto;
-}
-.demo-thumb img {
+	width: 95%;
+	margin: 0;
 	border: .35em solid #fff;
 	box-shadow: 0 0 .5em rgba(0,0,0,.1);
 }
+.demo-thumb a {
+	display: block;
+	overflow: hidden;
+}
 .demo-thumb img {
 	float: left;
+	min-width: 600px;
 }
 .demo-thumb figcaption {
 	background: rgba(255,255,255,.8);
@@ -446,6 +457,10 @@ a:hover .assets-hed {
 	position: absolute;
 	right: -.35em;
 	top: 0;
+}
+.demo-thumb figcaption .demo-hed {
+	padding-top: .25em;
+	font-size: 1.1em;
 }
 .demo-thumb li {
 	padding: .1em 0;

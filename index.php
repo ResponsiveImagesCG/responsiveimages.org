@@ -92,7 +92,9 @@
 				<section class="col-three topic">
 					<h1 class="subhed"><a href="#">Where can I learn more?</a></h1>
 					<dl>
-						<dt class="assets-hed">All CG work items</dt>
+						<dt class="assets-hed">The RICG on GitHub</dt>
+						<dd><a href="http://gh.responsiveimages.org">http://gh.responsiveimages.org</a></dd>
+						<dt class="assets-hed">Outstanding Issues</dt>
 						<dd><a href="http://bugs.responsiveimages.org">http://bugs.responsiveimages.org</a></dd>
 						<dt class="assets-hed">IRC Logs</dt>
 						<dd><a href="http://bugs.responsiveimages.org">http://bugs.responsiveimages.org</a></dd>

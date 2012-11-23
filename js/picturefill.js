@@ -12,15 +12,6 @@
 	// Enable strict mode
 	"use strict";
 	
-	// User preference for HD content when available
-	var prefHD = false || w.localStorage && w.localStorage[ "picturefill-prefHD" ] === "true",
-		hasHD;
-
-	// Test if `<picture>` is supported natively, if so, exit - no polyfill needed.
-	if ( !!( w.document.createElement( "picture" ) && w.document.createElement( "source" ) && w.HTMLPictureElement ) ){
-		return;
-	}
-	
 	w.picturefill = function() {
 		var ps = w.document.getElementsByTagName( "picture" );
 		
@@ -28,15 +19,6 @@
 		for( var i = 0, il = ps.length; i < il; i++ ){
 			var sources = ps[ i ].getElementsByTagName( "source" ),
 				picImg = null,
-				hasHD = false,
-				HDpref = function(){
-					prefHD = !prefHD;
-					if( w.localStorage ){
-						w.localStorage[ "picturefill-prefHD" ] = prefHD; 
-					}
-					w.picturefill();
-					return false;
-				},
 				matches = [];
 
 			// If no sources are found, they're likely erased from the DOM. Try finding them inside comments.
@@ -74,10 +56,8 @@
 				}
 
 				if( srcset ) {
-						var screenRes = ( prefHD && w.devicePixelRatio ) || 1, // Is it worth looping through reasonable matchMedia values here?
+						var screenRes = w.devicePixelRatio || 1, // Is it worth looping through reasonable matchMedia values here?
 							srclist = srcset.split(","); // Split comma-separated `srcset` sources into an array.
-
-						hasHD = w.devicePixelRatio > 1;
 
 						for( var res = srclist.length, r = res - 1; r >= 0; r-- ) { // Loop through each source/resolution in `srcset`.
 							var source = srclist[ r ].replace(/^\s*/, '').replace(/\s*$/, '').split(" "), // Remove any leading whitespace, then split on spaces.
@@ -99,21 +79,6 @@
 				}
 			}
 			// Manual resolution switching, to simulate UA interference.
-			if( !hasHD ){
-				var prevSwitch = ps[ i ].getElementsByTagName( "a" )[ 0 ],
-					picSwitch = w.document.createElement( "a" );
-				
-				if( prevSwitch ){
-					ps [ i ].removeChild( prevSwitch );
-				}
-				
-				picSwitch.href = "#";
-				picSwitch.innerHTML = ( prefHD ? "S" : "H" ) + "D";
-				picSwitch.title = "Prefer " + ( prefHD ? "standard" : "high" ) + " definition images.";
-				picSwitch.className = "pf-pref pf-pref-" + ( prefHD ? "standard" : "high" );
-				ps[ i ].appendChild( picSwitch );
-				picSwitch.onmouseup = HDpref;
-			}
 		}
 	};
 
