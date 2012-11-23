@@ -102,12 +102,12 @@ function print_issues($state, $issues)
 			<tr>
 				<td><?=$i->number?></td>
 				<th scope="row">
-					<a href="<?=$i->html_url?>"><?=$i->title?>
-					<?if( $i->comments > 0 ):?><b class="comments"><?=$i->comments?> comment<?=$i->comments == 1 ? '' : 's' ?></b><?endif?>
+					<a href="<?=$i->html_url?>"><?=htmlspecialchars($i->title,ENT_QUOTES,'UTF-8')?>
+					<?if( $i->comments > 0 ):?><b class="comments"><?=htmlspecialchars($i->comments, ENT_QUOTES, 'UTF-8')?> comment<?=$i->comments == 1 ? '' : 's' ?></b><?endif?>
 					</a>
 				</th>
 				<?//<td class="label">Enhancement</td>?>
-				<td><a href="https://github.com/<?$i->user->login?>"><?=$i->user->login?></a></td>
+				<td><a href="https://github.com/<?htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?>"><?=htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?></a></td>
 				<td><?=days_passed( $i->updated_at )?></td>
 			</tr>
 		<?endforeach;?>
