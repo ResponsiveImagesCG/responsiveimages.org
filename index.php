@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="css/enhanced.css" media="only all">
+	<link rel="stylesheet" href="css/enhanced.css?1" media="only all">
 </head>
 <body>
 
@@ -28,8 +28,8 @@
 		<figure class="col-b live-demo">
 			<a href="#">
 				<picture>
-					<source srcset="img/devices-sm.png 1x, img/devices.png 2x">
-					<source media="(min-width: 40em)" src="img/devices.png">
+					<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
+					<source media="(min-width: 40em)" src="img/devices.gif">
 					<noscript>
 						<img src="img/devices-sm.png">
 					</noscript>
@@ -96,8 +96,6 @@
 					<dl>
 						<dt class="assets-hed">The RICG on GitHub</dt>
 						<dd><a href="http://gh.responsiveimages.org">http://gh.responsiveimages.org</a></dd>
-						<dt class="assets-hed">Outstanding Issues</dt>
-						<dd><a href="http://bugs.responsiveimages.org">http://bugs.responsiveimages.org</a></dd>
 						<dt class="assets-hed">IRC Logs</dt>
 						<dd><a href="http://bugs.responsiveimages.org">http://bugs.responsiveimages.org</a></dd>
 						<dt class="assets-hed">Mailing List</dt>
@@ -106,10 +104,10 @@
 				</section>
 
 				<section class="col-three topic">
-					<h1 class="subhed"><a href="http://downloads.responsiveimages.org">Try it now!</a></h1>
+					<h1 class="subhed"><a href="http://demos.responsiveimages.org">Try it now!</a></h1>
 					<p class="chromium">The members of the RICG have put together a number of demos for the <code>picture</code> and <code>srcset</code> elements. The demos on this page require that you have our <a href="http://downloads.responsiveimages.org">Chromium build</a>.</p>
 
-					<a href="http://downloads.responsiveimages.org" class="more">View the Demos</a>
+					<a href="http://demos.responsiveimages.org" class="more">View the Demos</a>
 				</section>
 			</div>
 

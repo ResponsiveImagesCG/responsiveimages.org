@@ -21,14 +21,14 @@
 
 	<header class="doc-head">
 		<div class="col-a demo-intro">
-			<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
+			<h1 class="logo"><a href="http://responsiveimages.org"><img src="img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
 			<p class="intro">The demos on this page require that you have the working <a href="http://downloads.responsiveimages.org">Chromium build</a> by Yoav Weiss. Instructions are on the demo pages.</p>
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Get Chromium</a>
 		</div>
 	<figure class="col-b live-demo">
 			<picture>
-				<source srcset="img/devices-sm.png 1x, img/devices.png 2x">
-				<source media="(min-width: 40em)" src="img/devices.png">
+				<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
+				<source media="(min-width: 40em)" src="img/devices.gif">
 				<noscript>
 					<img src="img/devices-sm.png">
 				</noscript>
@@ -39,14 +39,18 @@
 
 	<div class="main">
 		<div>
+
 			<section class="demo">
 				<div class="col-a">
-					<h1 class="demo-hed"><a href="#">Basic Implementation</a></h1>
-					<p class="intro">This shows the basic implementation and usage of the <code>picture</code> element. It uses the <code>source</code> element and different @media-queries to fetch the correct image for the device-screen.</p>
-					<address>Author: <a href="#">Anselm Hanneman</a></address>
+					<h1 class="demo-hed"><a href="basic-implementation/index.html">Simple Cropping</a></h1>
+					<p>This shows the basic implementation and usage of the <code>picture</code> element. It uses the <code>source</code> element and different @media-queries to fetch the correct image for the device-screen.</p>
+					<address>Author:
+						<a href="http://anselm-hannemann.com">Anselm Hanneman</a> |
+						<a href="https://twitter.com/anselmhannemann">@anselmhannemann</a>
+					</address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="#"><img src="img/demo-crop.jpg"></a>
+					<a href="basic-implementation/index.html"><img src="img/demo-crop.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						<ul>
@@ -62,12 +66,12 @@
 
 			<section class="demo">
 				<div class="col-a">
-					<h1 class="demo-hed"><a href="#">Basic Implementation</a></h1>
-					<p class="intro">This shows the basic implementation and usage of the <code>picture</code> element. It uses the <code>source</code> element and different @media-queries to fetch the correct image for the device-screen.</p>
-					<address>Author: <a href="#">Anselm Hanneman</a></address>
+					<h1 class="demo-hed"><a href="on-a-grid/index.html">Grid System</a></h1>
+					<p>This shows the basic implementation and usage of the <code>picture</code> element. It uses the <code>source</code> element and different @media-queries to fetch the correct image for the device-screen.</p>
+					<address>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> | <a href="https://twitter.com/ixisio">@ixisio</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="#"><img src="img/demo-crop.jpg"></a>
+					<a href="on-a-grid/index.html"><img src="img/demo-grid.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						 <ul>
@@ -75,6 +79,25 @@
 							<li>tablet</li>
 							<li>desktop</li>
 							<li>monochrome / eInk</li>
+							<li>fallback</li>
+						</ul>
+					</figcaption>
+				</figure>
+			</section>
+
+			<section class="demo">
+				<div class="col-a">
+					<h1 class="demo-hed"><a href="art-direction/index.html">Art Direction</a></h1>
+					<p>Using the <code>picture</code> element for “<a href="http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/">art direction</a>.”</p>
+					<address>Author: <a href="http://www.shanehudson.net/">Shane Hudson</a> | <a href="https://twitter.com/shanehudson">@shanehudson</a></address>
+				</div>
+				<figure class="demo-thumb col-b">
+					<a href="art-direction/index.html"><img src="img/demo-orientation.jpg"></a>
+					<figcaption>
+						<p class="demo-hed">This demo shows:</p>
+						 <ul>
+							<li>small / large screen</li>
+							<li>art-direction</li>
 							<li>fallback</li>
 						</ul>
 					</figcaption>

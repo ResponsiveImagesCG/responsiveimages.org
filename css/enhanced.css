@@ -306,6 +306,7 @@ table {
 table a {
 	font-weight: bold;
 	display: block;
+	text-decoration: none;
 	padding: .8em .5em .6em 0;
 }
 .srcsetfill h2,
@@ -443,7 +444,7 @@ a:hover .assets-hed {
 .demo {
 	clear: both;
 	float: left;
-	padding: 1.5em 0;
+	padding: 0 0 2.75em 0;
 }
 .demo:first-child {
 	margin-top: 2.5em;
@@ -456,12 +457,15 @@ a:hover .assets-hed {
 }
 .demo address {
 	color: #777;
-	font: normal 1em/1 "DIN Condensed", sans-serif;
+	font: normal 1em/1.3 "DIN Condensed", sans-serif;
 	text-transform: uppercase;
 	margin: 0 0 1.5em 0;
 }
 .demo-hed a {
 	text-decoration: none;
+}
+.demo p {
+	padding-right: .5em;
 }
 .demo-thumb {
 	float: left;
@@ -481,7 +485,7 @@ a:hover .assets-hed {
 	min-width: 600px;
 }
 .demo-thumb figcaption {
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.9);
 	font-size: .95em;
 	height: 97.5%;
 	padding: .35em 3em 0 1em;
@@ -671,11 +675,8 @@ picture {
 		max-width: 90%;
 	}
 	.col-a .intro {
-		margin: 1em 1.5em 1.5em 1.5em;
-		padding: 0;
-		font-size: 1.05em;
-	}
-	.intro {
+		margin: 1em auto 1.5em auto;
+		padding: 0 1.5em;
 		font-size: 1.05em;
 	}
 }
