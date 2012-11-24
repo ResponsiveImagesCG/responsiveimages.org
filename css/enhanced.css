@@ -29,7 +29,7 @@ img {
 	max-width: 100%;
 }
 body {
-	font-family: "Proxima Nova";
+	font-family: "Proxima Nova", sans-serif;
 	background-repeat: repeat;
 	background-image: url(_img/bg.png);
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAADhCAYAAABbV7VpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAA8tJREFUeJzt18FJQ0EYRlGVNCC8lOAiLQipwLJTgJDNW6SEN0XYQhbKMN5zKvgY+LnM6/f9/vUCv2zfH7MnLONy+Zg9gX/IDT7vbfYAAJhJCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIOx1jzN6wjPO2zZ6wjDGO2ROWcbt5q2ddr5+zJyxjO7/PnrAMP0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgDQhBCBNCAFIE0IA0oQQgLTT7AEr2ffH7AnL2Lbz7AnLGOOYPWEZbpC/4EcIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApD2A6c/G0GCVp/9AAAAAElFTkSuQmCC);
@@ -39,13 +39,27 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0 0;
 }
-
+table#results {
+	border-top: none;
+	margin-top: 1em;
+}
 dd {
 	margin: 0 0 .75em 0;
 }
 dt.assets-hed {
 	margin: 0;
 	padding: .25em 0 0 0;
+}
+fieldset {
+	margin: 1.25em 0;
+	border: 1px solid #ccc;
+}
+input {
+	font-family: "Proxima Nova", sans-serif;
+	border: 1px solid #ddd;
+	font-size: 1em;
+	padding: .25em .5em;
+	border-radius: .2em;
 }
 .doc-head {
 	text-align: center;
@@ -59,7 +73,7 @@ dt.assets-hed {
 	display: block;
 	margin: 1em auto 0 auto;
 	width: 220px;
-	max-width: 100%;
+	max-width: 380px;
 }
 .logo img {
 	width: 100%;
@@ -164,6 +178,12 @@ dt.assets-hed {
 	display: block;
 	font: normal 1.05em/1 "DIN Condensed", sans-serif;
 	padding: .5em 3% .25em 3%;	
+	text-transform: uppercase;
+}
+.hed {
+	font: normal 2.2em/1.2 "DIN Condensed", sans-serif;
+	padding: .5em 0 0 0;
+	text-align: left;
 	text-transform: uppercase;
 }
 .subhed {
@@ -288,6 +308,7 @@ table a {
 	display: block;
 	padding: .8em .5em .6em 0;
 }
+.srcsetfill h2,
 table thead,
 .assets-hed {
 	color: #585858;
@@ -297,6 +318,16 @@ table thead,
 table thead th {
 	font-weight: normal;
 	padding: 1.75em 0 .15em 0;
+}
+.srcsetfill h2 {
+	font-size: 1.6em;
+	margin: 1.25em 0 .25em 0;
+	padding: .4em 0 .2em 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.srcsetfill p {
+	margin: 0 0 .75em 0;
 }
 .closed tbody th,
 .closed tbody td {
@@ -639,9 +670,12 @@ picture {
 	.live-demo img {
 		max-width: 90%;
 	}
-	.doc-head .intro {
+	.col-a .intro {
 		margin: 1em 1.5em 1.5em 1.5em;
 		padding: 0;
+		font-size: 1.05em;
+	}
+	.intro {
 		font-size: 1.05em;
 	}
 }

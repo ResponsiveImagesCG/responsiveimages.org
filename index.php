@@ -26,14 +26,16 @@
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Join Us!</a>
 		</div>
 		<figure class="col-b live-demo">
-			<picture>
-				<source srcset="img/devices-sm.png 1x, img/devices.png 2x">
-				<source media="(min-width: 40em)" src="img/devices.png">
-				<noscript>
-					<img src="img/devices-sm.png">
-				</noscript>
-			</picture>
-			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern. <a href="#" class="more">Here are some other sites!</a></figcaption>
+			<a href="#">
+				<picture>
+					<source srcset="img/devices-sm.png 1x, img/devices.png 2x">
+					<source media="(min-width: 40em)" src="img/devices.png">
+					<noscript>
+						<img src="img/devices-sm.png">
+					</noscript>
+				</picture>
+			</a>
+			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern.</figcaption>
 		</figure>
 
 	</header>
