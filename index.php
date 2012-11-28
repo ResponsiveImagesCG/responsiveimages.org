@@ -105,7 +105,7 @@
 
 				<section class="col-three topic">
 					<h1 class="subhed"><a href="http://demos.responsiveimages.org">Try it now!</a></h1>
-					<p class="chromium">The members of the RICG have put together a number of demos for the <code>picture</code> and <code>srcset</code> elements. The demos on this page require that you have our <a href="http://downloads.responsiveimages.org">Chromium build</a>.</p>
+					<p class="chromium">The members of the RICG have put together a number of demos for the <code>picture</code> and <code>srcset</code> elements. The demos on this page work in any modern browser, but if you want to see the real deal grab our <a href="http://downloads.responsiveimages.org/">Chromium build</a>.</p>
 
 					<a href="http://demos.responsiveimages.org" class="more">View the Demos</a>
 				</section>
