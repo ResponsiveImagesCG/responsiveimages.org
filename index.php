@@ -26,15 +26,13 @@
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Join Us!</a>
 		</div>
 		<figure class="col-b live-demo">
-			<a href="#">
-				<picture>
-					<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
-					<source media="(min-width: 40em)" src="img/devices.gif">
-					<noscript>
-						<img src="img/devices-sm.png">
-					</noscript>
-				</picture>
-			</a>
+			<picture>
+				<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
+				<source media="(min-width: 40em)" src="img/devices.gif">
+				<noscript>
+					<img src="img/devices-sm.png">
+				</noscript>
+			</picture>
 			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern.</figcaption>
 		</figure>
 
@@ -92,7 +90,7 @@
 				</section>
 
 				<section class="col-three topic">
-					<h1 class="subhed"><a href="#">Where can I learn more?</a></h1>
+					<h1 class="subhed">Where can I learn more?</h1>
 					<dl>
 						<dt class="assets-hed">The RICG on GitHub</dt>
 						<dd><a href="http://gh.responsiveimages.org">http://gh.responsiveimages.org</a></dd>

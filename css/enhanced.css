@@ -107,7 +107,7 @@ input {
 	font-size: .95em;
 	line-height: 1.35;
 	padding: .5em 1% 2.5em 1%;
-	width: auto;
+	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -546,6 +546,12 @@ picture {
 	text-decoration: none;
 	padding: 0 .35em;
 	border-radius: .25em;
+}
+.picturedemo h1 a {
+	text-decoration: none;
+}
+.picturedemo figcaption {
+	clear: both;
 }
 @media screen and (min-width: 50em) {
 	.main {
