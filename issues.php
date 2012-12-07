@@ -107,7 +107,7 @@ function print_issues($state, $issues)
 					</a>
 				</th>
 				<?//<td class="label">Enhancement</td>?>
-				<td><a href="https://github.com/<?htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?>"><?=htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?></a></td>
+				<td><a href="https://github.com/<?=htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?>"><?=htmlspecialchars($i->user->login, ENT_QUOTES, 'UTF-8')?></a></td>
 				<td><?=days_passed( $i->updated_at )?></td>
 			</tr>
 		<?endforeach;?>
