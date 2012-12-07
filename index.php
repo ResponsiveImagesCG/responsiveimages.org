@@ -95,7 +95,7 @@
 						<dt class="assets-hed">The RICG on GitHub</dt>
 						<dd><a href="http://gh.responsiveimages.org">http://gh.responsiveimages.org</a></dd>
 						<dt class="assets-hed">IRC Logs</dt>
-						<dd><a href="http://bugs.responsiveimages.org">http://bugs.responsiveimages.org</a></dd>
+						<dd><a href="http://ircbot.responsiveimages.org">http://ircbot.responsiveimages.org</a></dd>
 						<dt class="assets-hed">Mailing List</dt>
 						<dd><a href="http://list.responsiveimages.org">http://list.responsiveimages.org</a></dd>
 					</dl>
