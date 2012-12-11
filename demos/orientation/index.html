@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lte IE 8]> <html lang="en" class="ie-lte8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Orientation Demo</title>
+<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
+<meta name="author" content ="Andreas Klein, contact: mail@andreasklein.org">
+<meta property="og:url" content="http://responsiveimages.org">
+<meta property="og:site_name" content="Responsive Images Community Group">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Responsive Images Community Group">
+<meta property="og:image" content="http://responsiveimages.org/img/ricg-icon.png">
+<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../assets/prism.css">
+<link rel="stylesheet" href="../css/demo-page.css">
+<!-- code highlighting via prism.js -->
+<link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
+</head>
+<body>
+<header class="doc-head">
+  <h1 class="logo"><a href="http://responsiveimages.org"><img src="http://responsiveimages.org/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
+</header>
+<div class="main">
+  <div>
+    <section class="picturedemo">
+      <h1><a class="navlink" href="../">Demos</a> <span>Orientation</span></h1>
+      <figure>
+        <picture>
+        <source media="(orientation: portrait)" src="img/yacht_race@portrait.jpg">
+        <source media="(orientation: landscape)" src="img/yacht_race@landscape.jpg">
+        <img src="img/yacht_race@fallback.jpg" alt="A very exciting yacht race.">
+        <p>A very exciting yacht race.</p>
+      </picture>
+      <figcaption>
+        <p class="description">This demos shows a responsive iamges being adapted to orientation changes.</p>
+      </figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>HTML</h2>
+    <div class="demowrapper"><code class="language-markup">&lt;picture>
+      &lt;source media=&quot;(orientation: portrait)&quot; src=&quot;img/yacht_race@portrait.jpg&quot;&gt;
+      &lt;source media=&quot;(orientation: Landscape)&quot; src=&quot;img/yacht_race@Landscape.jpg&quot;&gt;
+      &lt;!-- fallback img if picture is not supported --&gt;
+      &lt;img src=&quot;img/yacht_race@fallback.jpg&quot; alt=&quot;A very exciting yacht race.&quot;&gt;
+      &lt;!-- alternate text --&gt;
+      &lt;p&gt;A very exciting yacht race.&lt;/p&gt;
+      &lt;/picture&gt;</code> </div>
+  </section>
+  <section>
+    <h2>Credits</h2>
+    <p><em>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> / <a href="https://twitter.com/ixisio">@ixisio</a></em></p>
+  </section>
+</div>
+</div>
+<footer class="doc-foot">
+  <aside class="assets"> <a href="http://responsiveimages.org/RICG-Logos.zip"> <img src="http://responsiveimages.org/img/xricg-icon.png.pagespeed.ic.chPKOBKITt.png" class="assets-thumb">
+    <h1 class="assets-hed">Download the RICG Logos</h1>
+    <p>Want to show your support for the goals of the RICG? Use our logo!</p>
+    </a> </aside>
+  <nav class="social">
+    <h1 class="a11y">Share this page</h1>
+    <a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a> <a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a> <a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a> </nav>
+</footer>
+
+<!-- code highlighting via prism.js --> 
+<script src="../assets/prism.js"></script> 
+<script src="../js/picturefill.js"></script> 
+<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName','responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+</body>
+</html>

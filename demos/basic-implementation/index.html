@@ -1,0 +1,80 @@
+<!doctype html>
+<!--[if lte IE 8]> <html lang="en" class="ie-lte8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Simple crop demo</title>
+<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
+<meta name="author" content ="Anselm Hannemann, contact: info@anselm-hannemann.com">
+<meta property="og:url" content="http://responsiveimages.org">
+<meta property="og:site_name" content="Responsive Images Community Group">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Responsive Images Community Group">
+<meta property="og:image" content="http://responsiveimages.org/img/ricg-icon.png">
+<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../assets/prism.css">
+<link rel="stylesheet" href="../css/demo-page.css">
+<!-- code highlighting via prism.js -->
+<link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
+</head>
+<body>
+<header class="doc-head">
+  <h1 class="logo"><a href="http://responsiveimages.org"><img src="http://responsiveimages.org/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
+</header>
+<div class="main">
+  <div>
+    <section class="picturedemo">
+      <h1><a class="navlink" href="../">Demos</a> <span>Simple crop</span></h1>
+      <figure>
+        <picture>
+        <source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
+      <source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
+      <source media="(min-width: 640px)" src="test_landscape_1@4x.jpg">
+      <source media="monochrome" src="test_landscape_1@monochrome.jpg">
+      <source media="print" src="test_landscape_1@monochrome.jpg">
+      
+      <!-- fallback if picture is not supported --> 
+      <img src="test_landscape_1@2x.jpg"> 
+      
+      <!-- alternate text -->
+      <p> Nymphenburg Castle in Munich during sunset</p>
+    </picture>
+    <figcaption>
+     <p><strong>Rotate/resize the window the image change.</strong> 
+      Large images incur unnecessary download and processing time, slowing the experience for users. To solve this problem, the picture element allows you to provide multiple sources of the same image at different resolutions so the browser can pick the image of the correct size based on the viewport size.</p>
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>HTML</h2>
+<div class="demosource"><code class="language-markup">
+&lt;picture>
+    &lt;source media="(max-width: 479px)" src="test_landscape_1@1x.jpg">
+    &lt;source media="(min-width: 480px) and (max-width: 639px)" src="test_landscape_1@2x.jpg">
+    &lt;source media="(min-width: 640px)" src="test_landscape_1@4x.jpg">
+    &lt;source media="monochrome" src="test_landscape_1@monochrome.jpg">
+    &lt;source media="print" src="test_landscape_1@monochrome.jpg">
+
+    &lt;!-- fallback img if picture is not supported -->
+    &lt;img src="test_landscape_1@2x.jpg">
+                
+    &lt;!-- alternate text -->
+    &lt;p>Nymphenburg Castle in Munich during sunset&lt;/p>
+&lt;/picture></code></div>
+</section>
+<section>
+  <h2>Credits</h2>
+  <p><em>Author: <a href="http://anselm-hannemann.com/">Anselm Hannemann</a> / <a href="https://twitter.com/anselmhannemann">@anselmhannemann</a></em></p>
+</section>
+</div>
+</div>
+<!-- code highlighting via prism.js --> 
+<script src="../assets/prism.js"></script>
+<script src="../js/picturefill.js"></script>
+<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName','responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+</body>
+</html>

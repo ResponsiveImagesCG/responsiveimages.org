@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lte IE 8]> <html lang="en" class="ie-lte8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Print Demo</title>
+<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
+<meta name="author" content ="Brian Muenzenmeyer, contact: brian.muenzenmeyer@gmail.com">
+<meta property="og:url" content="http://responsiveimages.org">
+<meta property="og:site_name" content="Responsive Images Community Group">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Responsive Images Community Group">
+<meta property="og:image" content="http://responsiveimages.org/img/ricg-icon.png">
+<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../assets/prism.css">
+<link rel="stylesheet" href="../css/demo-page.css">
+<!-- code highlighting via prism.js -->
+<link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
+</head>  
+<body>
+<header class="doc-head">
+  <h1 class="logo"><a href="http://responsiveimages.org"><img src="http://responsiveimages.org/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
+</header>
+<div class="main">
+  <div> 
+    <!-- START PICTURE-ELEMENT DEMO -->
+    <section class="picturedemo">
+      <h1><a class="navlink" href="../">Demos</a> <span>Print</span></h1>
+      <figure>
+        <picture>              <source media="screen and (max-width: 479px)" src="img/monster_small.jpg">
+                <source media="screen (min-width: 480px)" src="img/monster.jpg">
+                <source media="print" src="img/monster_print.jpg">
+                <img src="img/monster.jpg">
+          <p>Meat Eater Monster Sandwich Special</p>
+            </picture>
+            
+        	<figcaption>
+        	  <p class="description"><strong>To view this demo, you need to do a "print preview".</strong> The demo loads a different image when the document is printed.</p></figcaption>    
+        </figure>
+    
+</section>
+
+<section>
+<h2>HTML</h2>
+<div class="demosource"><code class="language-markup">&lt;!-- picture-element -->
+&lt;picture>
+    &lt;source media="screen and (max-width: 479px)" src="img/monster_small.jpg">
+    &lt;source media="screen and (min-width: 480px)" src="img/monster.jpg">
+    &lt;source media="print" src="img/monster_print.jpg">
+
+    &lt;!-- fallback img-element if picture-element is not supported -->
+    &lt;img src="img/monster.jpg">
+                
+    &lt;!-- a11y: providing alternate text -->
+    &lt;p>Meat Eater Monster Sandwich Special&lt;/p>
+&lt;/picture></code></div>
+</section>
+
+<section>
+<h2>Credits</h2>
+<p><em>Author: <a href="http://www.brianmuenzenmeyer.com/">Brian Muenzenmeyer</a> / <a href="https://twitter.com/bmuenzenmeyer">@bmuenzenmeyer</a></em></p></section>
+</div>
+</div>
+<footer class="doc-foot">
+  <aside class="assets"> <a href="http://responsiveimages.org/RICG-Logos.zip"> <img src="http://responsiveimages.org/img/xricg-icon.png.pagespeed.ic.chPKOBKITt.png" class="assets-thumb">
+    <h1 class="assets-hed">Download the RICG Logos</h1>
+    <p>Want to show your support for the goals of the RICG? Use our logo!</p>
+    </a> </aside>
+  <nav class="social">
+    <h1 class="a11y">Share this page</h1>
+    <a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a> <a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a> <a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a> </nav>
+</footer>
+
+<!-- code highlighting via prism.js --> 
+ <!-- code highlighting via prism.js --> 
+        <script src="../assets/prism.js"></script>
+<script src="../js/picturefill.js"></script>
+<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName','responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+</body>
+</html>

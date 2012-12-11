@@ -1,0 +1,93 @@
+/**  Susy : http://susy.oddbird.net/ */
+@import "susy";
+
+/**  Import some compass mixins */
+@import "compass/layout/grid-background";
+@import "compass/css3/background-origin";
+@import "compass/css3/background-clip";  
+
+/** 
+  *     Susy Settings 
+  *     
+  *     read more about susy-grid 
+  *     http://susy.oddbird.net/guides/reference/
+  * 
+  */
+
+$total-columns  : 6;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+$content-vert-padding : 2em;
+
+
+
+
+// Grid cols in the background
+@mixin grid-background($columns){
+  @include column-grid-background($columns, column(), gutter(), 0%, #eee);
+  @include background-origin(content-box);
+  @include background-clip(content-box);
+} 
+
+
+
+/*  ================================================================================
+    Defaults:
+    ---------------------
+
+    ================================================================================  */
+html, body { margin: 0; padding: 0;}
+body {
+
+    background: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+	// Container
+	.wrapper {
+
+		@include container;
+		@include grid-background($total-columns);
+
+	  	@include at-breakpoint(30em 8 48em) {
+		  	@include set-container-width;
+		  	@include grid-background(8);
+		}
+
+		@include at-breakpoint(48em 10 60em) {
+		  	@include set-container-width;
+		  	@include grid-background(10);
+		}
+
+		@include at-breakpoint(60em 12 80em) {
+		  	@include set-container-width;
+		  	@include grid-background(12);
+		}
+
+		@include at-breakpoint(80em 16) {
+		  	@include set-container-width;
+		  	@include grid-background(16);
+		}
+
+		#content {
+			padding: $content-vert-padding 0;
+		}
+	}
+
+	pre{
+	    box-shadow: inset 0 0 15px rgba(0,0,0,.75);
+	}
+}
+
+
+
+/*  ================================================================================
+    MQs for High Density
+    -----------------------------------
+
+    ================================================================================ */ 
+@media  only screen and (min--moz-device-pixel-ratio: 2), 
+        only screen and (-o-min-device-pixel-ratio: 2/1), 
+        only screen and (-webkit-min-device-pixel-ratio: 2), 
+        only screen and (min-device-pixel-ratio: 2) { }
+
