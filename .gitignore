@@ -15,7 +15,8 @@ node_modules
 npm-debug.log
 .DS_Store
 
-_notes/dwsync.xml
+*/_notes/dwsync.xml
+dwsync.xml
 
 cache/closed-issues.cache
 
