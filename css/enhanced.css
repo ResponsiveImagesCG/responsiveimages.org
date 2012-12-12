@@ -137,7 +137,6 @@ input {
 .topic .more {
 	clear: both;
 	display: block;
-	float: left;
 	font-weight: bold;
 	margin: 1em 0 0 0;
 	text-decoration: underline;

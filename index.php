@@ -74,8 +74,8 @@
 				</figure>
 
 				<p><a href="http://dev.w3.org/html5/srcset/" class="more">Read the <code>srcset</code> Specification</a></p>
-                <p><a href="http://responsiveimagescg.github.com/picture-refimp/demo/">Example parser</a></p>
-			</section>
+                <p><a href="http://responsiveimagescg.github.com/picture-refimp/demo/">Example <code>srcset</code> parser</a></p>
+		  </section>
 
 			<div class="subtopics">
 

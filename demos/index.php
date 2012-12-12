@@ -1,4 +1,4 @@
-<?php include_once( "issues.php" ); ?><!doctype html>
+<!doctype html>
 <!--[if lte IE 8]> <html lang="en" class="ie-lte8"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
@@ -15,25 +15,25 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="css/enhanced.css" media="only all">
+	<link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
 </head>
 <body>
 
 	<header class="doc-head">
 	  <div class="col-a demo-intro">
-			<h1 class="logo"><a href="http://responsiveimages.org"><img src="img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
+			<h1 class="logo"><a href="http://responsiveimages.org"><img src="/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
 			<p class="intro">The demos  work in any modern browser, but you can also  <a href="https://github.com/yoavweiss/RespImg-WebCore/downloads">download our Chromium build</a> that natively supports the <code>picture</code> element.</p>
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Get Chromium</a>
 		</div>
 	<figure class="col-b live-demo">
 			<picture>
 				<source srcset="http://responsiveimages.org/img/devices-sm.gif 1x, http://responsiveimages.org/img/devices.gif 2x">
-				<source media="(min-width: 40em)" src="img/devices.gif">
+				<source media="(min-width: 40em)" src="http://responsiveimages.org/img/devices.gif">
 				<noscript>
-					<img src="http://responsiveimages.org/img/devices-sm.gif">
+					<img src="http://responsiveimages.org/img/devices-sm.png">
 				</noscript>
 			</picture>
-			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern. <a href="#" class="more">Here are some other sites!</a></figcaption>
+			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
 	</header>
 
@@ -50,7 +50,7 @@
 					</address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="basic-implementation/index.html"><img src="img/demo-crop.jpg"></a>
+					<a href="basic-implementation/index.html"><img src="http://responsiveimages.org/img/demo-crop.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						<ul>
@@ -71,7 +71,7 @@
 					<address>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> | <a href="https://twitter.com/ixisio">@ixisio</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="on-a-grid/index.html"><img src="img/demo-grid.jpg"></a>
+					<a href="on-a-grid/index.html"><img src="http://responsiveimages.org/img/demo-grid.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						 <ul>
@@ -92,7 +92,7 @@
 					<address>Author: <a href="http://www.shanehudson.net/">Shane Hudson</a> | <a href="https://twitter.com/shanehudson">@shanehudson</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="art-direction/index.html"><img src="img/demo-orientation.jpg"></a>
+					<a href="art-direction/index.html"><img src="http://responsiveimages.org/img/demo-orientation.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						 <ul>
@@ -110,7 +110,7 @@
 
 		<aside class="assets">
 			<a href="RICG-Logos.zip">
-				<img src="img/ricg-icon.png" class="assets-thumb">
+				<img src="http://responsiveimages.org/img/ricg-icon.png" class="assets-thumb">
 				<h1 class="assets-hed">Download the RICG Logos</h1>
 				<p>Want to show your support for the goals of the RICG? Use our logo!</p>
 			</a>
@@ -124,7 +124,7 @@
 		</nav>
 
 	</div>
-	<script src="js/picturefill.js"></script>
+	<script src="http://responsiveimages.org/js/picturefill.js"></script>
 
 	<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName', 'responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
 </body>
