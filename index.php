@@ -30,7 +30,7 @@
 					<img src="img/devices-sm.png">
 				</noscript>
 			</picture>
-			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos</a>.</figcaption>
+			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
 
 	</header>

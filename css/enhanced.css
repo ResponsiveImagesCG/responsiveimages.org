@@ -441,6 +441,10 @@ a:hover .assets-hed {
 	width: 3em;
 }
 
+.col-b figcaption{
+	clear: both;	
+}
+
 .demo {
 	clear: both;
 	float: left;
@@ -653,7 +657,7 @@ picture {
 		margin: 0 1% 0 0;
 		float: right;
 		width: 55.25%;
-	}
+	}	
 
 	.demo .col-a {
 		padding: 0;
