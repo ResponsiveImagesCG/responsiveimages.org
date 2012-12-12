@@ -30,7 +30,7 @@
 					<img src="img/devices-sm.png">
 				</noscript>
 			</picture>
-			<figcaption><a href="http://dribbble.com">Dribbble.com</a> is using the <code>picture</code> markup pattern.</figcaption>
+			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos</a>.</figcaption>
 		</figure>
 
 	</header>
