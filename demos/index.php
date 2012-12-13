@@ -103,6 +103,25 @@
 					</figcaption>
 				</figure>
 			</section>
+
+			<section class="demo">
+				<div class="col-a">
+					<h1 class="demo-hed"><a href="no-folri/index.html">No FOLRI on reorientation</a></h1>
+					<p>Shows the <code>picture</code> element handling on orientation-change</p>
+					<address>Author: <a href="http://code.medula.cl/">Agustín Amenabar</a> | <a href="https://twitter.com/ImINaBAR">@ImINaBAR</a></address>
+				</div>
+				<figure class="demo-thumb col-b">
+					<a href="no-folri/index.html"><img src="http://responsiveimages.org/img/demo-orientationchange.jpg"></a>
+					<figcaption>
+						<p class="demo-hed">This demo shows:</p>
+						 <ul>
+							<li>orientation-change</li>
+							<li>fallback</li>
+						</ul>
+					</figcaption>
+				</figure>
+			</section>
+
 		</div>
 	</div>
 
