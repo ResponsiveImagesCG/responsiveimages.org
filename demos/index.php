@@ -123,7 +123,9 @@
 			</section>
 
 		</div>
+	    <p>Hosting and bandwidth for these demos is provided by <a href="http://cdnconnect.com">CDNConnect.com</a></p>
 	</div>
+
 
 	<div class="doc-foot">
 
