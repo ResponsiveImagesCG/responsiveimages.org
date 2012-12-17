@@ -120,15 +120,15 @@
 						</ul>
 					</figcaption>
 				</figure>
-			</section>
 
+			</section>
 		</div>
-	    <p>Hosting and bandwidth for these demos is provided by <a href="http://cdnconnect.com">CDNConnect.com</a></p>
+		                    
 	</div>
 
 
 	<div class="doc-foot">
-
+		<p style="clear:both">Hosting and bandwidth for these demos is provided by <a href="http://cdnconnect.com">CDNConnect.com</a></p>
 		<aside class="assets">
 			<a href="RICG-Logos.zip">
 				<img src="http://responsiveimages.org/img/ricg-icon.png" class="assets-thumb">
