@@ -78,7 +78,7 @@
 
 	<section>
         <h2>Explanation</h2>
-        <p>When setting a breakpoint with <code>min/max-width</code> it can sometimes lay between a device's width and height, calling a new image on re-orientation. If this happens from portrait to landscape you get a <strong>Flash of lower resolution image</strong> (or <a href="https://github.com/ResponsiveImagesCG/ri-usecases/issues/16#issuecomment-9936167">FOLRI</a> as coined by Yoav Weiss)</p>
+        <p>When setting a breakpoint with <code>min/max-width</code> it can sometimes lay between a device's width and height, calling a new image on re-orientation. If this happens from portrait to landscape you get a <strong>Flash of lower resolution image</strong> (or <a href="https://github.com/ResponsiveImagesCG/ri-usecases/issues/16#issuecomment-9936167">FOLRI</a> as coined by <a href="http://blog.yoav.ws/">Yoav Weiss</a>)</p>
         <p>The above is sometimes desirable, but sometimes not.</p>
         <p>This approach tries to solve the issue when you don't want it to happen. When you target the device's width it doesn't matter with orientation it currently has so you can comfortably tailor images for devices in landscape and portrait.</p>
         <p>The device width in <code>min-device-width</code> is the narrower side in the most common mobile devices, and most of these have an aspect ratio smaller than 16:9 so by loading an image of the probable maximum viewport width to the minimum device width, you'll never get FOLRI.</p>
