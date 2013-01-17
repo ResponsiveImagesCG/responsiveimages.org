@@ -23,7 +23,7 @@
 	  <div class="col-a demo-intro">
 			<h1 class="logo"><a href="http://responsiveimages.org"><img src="/img/logo.png" alt="Responsive Images Community Group logo"></a></h1>
 			<p class="intro">The demos  work in any modern browser, but you can also  <a href="https://github.com/yoavweiss/RespImg-WebCore/downloads">download our Chromium build</a> that natively supports the <code>picture</code> element.</p>
-			<a href=""http://downloads.responsiveimages.org/" class="subhed go">Get Chromium</a>
+			<a href="http://downloads.responsiveimages.org/" class="subhed go">Get Chromium</a>
 		</div>
 	<figure class="col-b live-demo">
 			<picture>
