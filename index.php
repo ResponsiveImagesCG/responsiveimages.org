@@ -42,7 +42,7 @@
 				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
 				an image. By using media queries, it gives developers control as to when and if those
 				images are presented to the user.</p>
-				
+
 				<figure class="snippet">
 					<figcaption class="codehed">Sample Markup for `picture`</figcaption>
 					<code>
@@ -132,7 +132,7 @@
 
 		<nav class="social">
 			<h1 class="a11y">Share this page</h1>
-			<a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a>
+			<a class="subhed twitter" href="https://twitter.com/respimg">Twitter</a>
 			<a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
 			<a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
 		</nav>
