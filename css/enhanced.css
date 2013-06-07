@@ -176,7 +176,7 @@ input {
 	color: #fff;
 	display: block;
 	font: normal 1.05em/1 "DIN Condensed", sans-serif;
-	padding: .5em 3% .25em 3%;	
+	padding: .5em 3% .25em 3%;
 	text-transform: uppercase;
 }
 .hed {
@@ -441,7 +441,7 @@ a:hover .assets-hed {
 }
 
 .col-b figcaption{
-	clear: both;	
+	clear: both;
 }
 
 .demo {
@@ -531,11 +531,15 @@ a:hover .assets-hed {
 .doc-head .chromium {
 	background-position: left bottom;
 }
+
 picture {
 	display: block;
 	position: relative;
 	float: right;
+	max-width: 100%;
+	height: auto;
 }
+
 .pf-pref {
 	background: #fff;
 	background: rgba(255,255,255,.7);
@@ -649,19 +653,19 @@ picture {
 	.col-a {
 		padding: 0;
 		margin: 0 0 0 1%;
-		width: 38.583333333333%; 
+		width: 38.583333333333%;
 		float: left;
 	}
 	.col-b {
 		margin: 0 1% 0 0;
 		float: right;
 		width: 55.25%;
-	}	
+	}
 
 	.demo .col-a {
 		padding: 0;
 		margin: 0 0 0 1%;
-		width: 31.25%; 
+		width: 31.25%;
 		float: left;
 	}
 	.demo .col-b {
