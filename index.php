@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>ResponsiveImages.org</title>
-	<meta name="description" content="Our goal is a markup-based means of delivering alternate image sources based on device capabilities.">
+	<meta name="description" content="Our goal is a client-side solution of delivering alternate image data based on device capabilities.">
 	<meta property="og:url" content="http://responsiveimages.org">
 	<meta property="og:site_name" content="Responsive Images Community Group">
 	<meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 	<header class="doc-head">
 		<div class="col-a">
 			<h1 class="logo"><img src="img/logo.png" alt="Responsive Images Community Group logo"></h1>
-			<p class="intro">We’re a group of developers working towards a markup-based means of delivering alternate image sources based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. </p>
+			<p class="intro">We’re a group of developers working towards a client-side solution of delivering alternate image data based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. </p>
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Join Us!</a>
 		</div>
 		<figure class="col-b live-demo">
