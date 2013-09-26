@@ -39,6 +39,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0 0;
 }
+/* Table cells won't collapse smaller than the longest word without this. */
+table * {
+	word-break: break-all;
+}
 table#results {
 	border-top: none;
 	margin-top: 1em;
@@ -339,7 +343,10 @@ table tbody th {
 	border-top: 1px solid #d6d6d6;
 }
 table tbody th {
-	width: 65%;
+	width: 40%;
+}
+table tbody td {
+	width: 20%;
 }
 table tbody th a {
 	margin-right: .35em;
