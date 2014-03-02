@@ -107,7 +107,43 @@
 				</section>
 			</div>
 
-			<section id="issue-tracker">
+			<section class="twitter-feed" id="twitter-feed">
+				<h1 class="subhed">News / Updates</h1>
+				<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/respimg"  data-widget-id="342992787676999681" width="600" height="400">Tweets by @respimg</a>
+			</section>
+
+			<section class="implementation" id="implementation">
+				<h1 class="subhed">Implementation status</h1>
+				<p><em>This list indicates the status of implementation in major browser engines. We always try to keep this up-to-date but please refer to the linked issues for the latest status.<br> In most bugtrackers you can vote for implementation in the linked bugs.</em></p>
+				<ul>
+					<li><strong>Blink / Chrome</strong>
+						<ul>
+							<li>Picture: <a href="#">Strongly inclined to implement, but no official bug open</a></li>
+							<li>srcset: <a href="http://blog.chromium.org/2014/02/chrome-34-responsive-images-and_9316.html">IMPLEMENTED/SHIPPED (Chrome 34)</a></li>
+						</ul>
+					</li>
+					<li><strong>WebKit / Safari</strong>
+						<ul>
+							<li>Picture: <a href="https://bugs.webkit.org/show_bug.cgi?id=116963">UNCONFIRMED (not implemented)</a></li>
+							<li>srcset: <a href="https://www.webkit.org/blog/2910/improved-support-for-high-resolution-displays-with-the-srcset-image-attribute/">IMPLEMENTED</a></li>
+						</ul>
+					</li>
+					<li><strong>Mozilla Firefox</strong>
+						<ul>
+							<li>Picture: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870022">ASSIGNED (but not implemented)</a></li>
+							<li>srcset: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870021">OPEN (but not implemented)</a></li>
+						</ul>
+					</li>
+					<li><strong>Microsoft Internet Explorer</strong>
+						<ul>
+							<li>Picture: <a href="https://connect.microsoft.com/IE/feedback/details/825880/implement-picture-element-and-srcset-attribute">NO INFORMATION</a></li>
+							<li>srcset: <a href="https://connect.microsoft.com/IE/feedback/details/825880/implement-picture-element-and-srcset-attribute">NO INFORMATION</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="issue-tracker" id="issue-tracker">
 				<h1 class="a11y">Issue Tracker</h1>
 				<div id="issues-open">
 					<? print_issues('open', get_issues( 'open' ))?>
@@ -141,5 +177,7 @@
 	<script src="js/tabs.js"></script>
 	<script src="js/picturefill.js"></script>
 	<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName', 'responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+	<!-- Twitter feed -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
