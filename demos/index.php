@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
+	<link rel="stylesheet" href="/css/enhanced.css" media="only all">
 </head>
 <body>
 
