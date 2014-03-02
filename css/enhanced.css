@@ -14,9 +14,9 @@ a {
 	text-decoration: underline;
 	position: relative;
 	-webkit-transition: color .1s linear, background-color .1s linear;
-	-moz-transition: color .1s linear, background-color .1s linear;
-	-o-transition: color .1s linear, background-color .1s linear;
-	transition: color .1s linear, background-color .1s linear;
+	   -moz-transition: color .1s linear, background-color .1s linear;
+	     -o-transition: color .1s linear, background-color .1s linear;
+	        transition: color .1s linear, background-color .1s linear;
 }
 a:hover {
 	color: #d6342d;
@@ -63,7 +63,8 @@ input {
 	border: 1px solid #ddd;
 	font-size: 1em;
 	padding: .25em .5em;
-	border-radius: .2em;
+	-webkit-border-radius: .2em;
+	        border-radius: .2em;
 }
 .doc-head {
 	text-align: center;
@@ -113,9 +114,8 @@ input {
 	padding: .5em 1% 2.5em 1%;
 	width: 100%;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .topic:last-child {
 	border-bottom: 1px solid #d6d6d6;
@@ -124,9 +124,9 @@ input {
 .topic p {
 	color: #222;
 	-webkit-transition: color .1s linear;
-	-moz-transition: color .1s linear;
-	-o-transition: color .1s linear;
-	transition: color .1s linear;
+	   -moz-transition: color .1s linear;
+	     -o-transition: color .1s linear;
+	        transition: color .1s linear;
 }
 .topic b {
 	margin: 0;
@@ -134,9 +134,9 @@ input {
 	color: #841d1a;
 
 	-webkit-transition: color .1s linear;
-	-moz-transition: color .1s linear;
-	-o-transition: color .1s linear;
-	transition: color .1s linear;
+	   -moz-transition: color .1s linear;
+	     -o-transition: color .1s linear;
+	        transition: color .1s linear;
 }
 .topic .more {
 	clear: both;
@@ -192,10 +192,10 @@ input {
 .subhed {
 	background-color: #841d1a;
 	background-image: -webkit-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
-	background-image: -moz-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
-	background-image: -o-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
-	background-image: -ms-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
-	background-image: linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
+	background-image:    -moz-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
+	background-image:      -o-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
+	background-image:     -ms-linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
+	background-image:         linear-gradient( bottom, rgba( 0,0,0,.15 ) 0%, rgba( 255,255,255,0 ) 100% );
 	background-repeat: no-repeat;
 	border-top: 1px solid rgba(255,255,255,.5);
 	border-left: 1px solid rgba(255,255,255,.5);
@@ -210,9 +210,9 @@ input {
 	text-transform: uppercase;
 
 	-webkit-transition: background-color .1s linear;
-	-moz-transition: background-color .1s linear;
-	-o-transition: background-color .1s linear;
-	transition: background-color .1s linear;
+	   -moz-transition: background-color .1s linear;
+	     -o-transition: background-color .1s linear;
+	        transition: background-color .1s linear;
 }
 .subhed a {
 	color: #fff;
@@ -276,9 +276,8 @@ input {
 	z-index: 0;
 
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .tablist .active {
 	background: #f9f9f9;
@@ -356,13 +355,14 @@ table tbody td {
 }
 .comments {
 	background: #e5e5e5;
-	border-radius: .25em;
 	color: #666;
 	display: inline-block;
 	font-size: .8em;
 	font-weight: normal;
 	padding: 1px 7px;
 	text-shadow: 0 1px 1px #fff;
+	-webkit-border-radius: .25em;
+	        border-radius: .25em;
 }
 .doc-foot {
 	margin: 0 auto;
@@ -428,9 +428,9 @@ table tbody td {
 	margin: .4em 0 .35em 0;
 
 	-webkit-transition: color .1s linear;
-	-moz-transition: color .1s linear;
-	-o-transition: color .1s linear;
-	transition: color .1s linear;
+	   -moz-transition: color .1s linear;
+	     -o-transition: color .1s linear;
+	        transition: color .1s linear;
 }
 a:hover .assets-hed {
 	color: #d6342d;
@@ -484,7 +484,8 @@ a:hover .assets-hed {
 	width: 95%;
 	margin: 0;
 	border: .35em solid #fff;
-	box-shadow: 0 0 .5em rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 0 .5em rgba(0,0,0,.1);
+	        box-shadow: 0 0 .5em rgba(0,0,0,.1);
 }
 .demo-thumb a {
 	display: block;
@@ -559,7 +560,8 @@ picture {
 	z-index: 2;
 	text-decoration: none;
 	padding: 0 .35em;
-	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	        border-radius: .25em;
 }
 .picturedemo h1 a {
 	text-decoration: none;
