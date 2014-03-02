@@ -13,6 +13,7 @@
 	<meta property="og:description" content="Read the latest news on responsive images, and get involved!">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/enhanced.css?1" media="only all">
+	<link rel="author" href="humans.txt" />
 </head>
 <body>
 
@@ -132,6 +133,7 @@
 
 		<nav class="social">
 			<h1 class="a11y">Share this page</h1>
+			<a class="subhed humans" href="https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors">Contributors</a>
 			<a class="subhed twitter" href="https://twitter.com/respimg">Twitter</a>
 			<a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
 			<a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>

@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+
+For the folks that worked on the website, see:
+https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors
+
+/* THANKS */
+
+to all who contribute(d) and helped to push this forward
+
+/* SITE */
+Standards: HTML5, CSS3, PHP, JavaScript
+Components: picturefill, tabs
