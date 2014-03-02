@@ -537,18 +537,6 @@ a:hover .assets-hed {
 	font-size: .8em;
 	line-height: 1.3;
 }
-.demo-intro:before,
-.chromium {
-	background: url(_img/chromium.png) right top no-repeat;
-	padding-right: 100px;
-	min-height: 100px;
-	background-size: 90px;
-}
-.demo-intro:before,
-.doc-head .chromium {
-	background-position: left bottom;
-}
-
 picture {
 	display: block;
 	position: relative;
