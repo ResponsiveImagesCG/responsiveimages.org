@@ -364,6 +364,15 @@ table tbody td {
 	-webkit-border-radius: .25em;
 	        border-radius: .25em;
 }
+.twitter-feed,
+.implementation {
+	float: none;
+	width: 100%;
+}
+.twitter-feed iframe {
+	width: 100%;
+	max-width: 100%;
+}
 .doc-foot {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -632,6 +641,20 @@ picture {
 	.assets {
 		margin-top: .25em;
 		width: 48.936170212766%;
+	}
+	.twitter-feed,
+	.implementation {
+		float: left;
+		width: 49%;
+	}
+	.twitter-feed {
+		margin-right: 1%;
+	}
+	.implementation {
+		margin-left: 1%;
+	}
+	.implementation > ul > li {
+		margin-bottom: 0.75em;
 	}
 	.social {
 		padding-top: 1.5em;
