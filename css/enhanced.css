@@ -390,6 +390,15 @@ table tbody td {
 .social a:active {
 	top: 0;
 }
+
+.humans {
+	background-image: url(_img/humanstxt.png);
+	background-position: center center;
+}
+.social .subhed.humans {
+	width: 6em;
+}
+
 .twitter {
 	background-image: url(_img/twitter.png);
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYRJREFUOI2lk6+LVFEYht9zdkFwXWXNYlr8ARrXYjIYxLR/gLBJNNlsVptB4wSDSTC5IKjBMkEMYjAMWkSLIrKiGBaG530N3hmuOjsexhduOd+9z3m+j+9KkpJUNcb2EWAAfAC+AkPbm736qSRHJUnAtu3jDdCTwOfMCPAAeA68TLIk2yuAgU+2N+aBgRezoD34R9vXbF9SkrVeYdf29STLs2znQXuMV0nWJibv/ii+TXLZ9sEe+EIDdGR7tW9zdY8Xd4FnwC3gTgP46YS5nF+jGNt+VGu92G+/1rpP0rnuacmXKVjSjyS3a637Gz/eM6WU0VSqlDKWdO9/oR14+NtBkkPd/i2cbr+XpsbdTd9KKedt37T9fUHhQSmFv05b1mmO7U4muzsrwGBB9tbcXpIU21eAEeBG27vNw7K9AbxugN7PjN9/AllNciDJiSRbwOMG4Nj2jSRlnt0Z4Elj2wAPbZ/+V9fTG22vS9pMclbSMUmHJY0l7dRa3yQZStqutb5vGedPN9QerEMFL08AAAAASUVORK5CYII=);
