@@ -103,7 +103,11 @@
 				</figure>
 			</section>
 
-			<section class="demo">
+			<!--
+			Not working: see bug 
+			https://github.com/ResponsiveImagesCG/responsiveimages.org/issues/47
+
+			section class="demo">
 				<div class="col-a">
 					<h1 class="demo-hed"><a href="no-folri/index.html">No FOLRI on reorientation</a></h1>
 					<p>Shows the <code>picture</code> element handling on orientation-change</p>
@@ -120,7 +124,7 @@
 					</figcaption>
 				</figure>
 
-			</section>
+			</section-->
 		</div>
 
 	</div>
