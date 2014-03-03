@@ -56,7 +56,7 @@
 </pre>
 					</code>
 				</figure>
-				<a href="http://picture.responsiveimages.org" class="more">Read the <code>picture</code> Specification</a>
+				<a href="http://picture.responsiveimages.org" class="more">The <code>picture</code> Specification</a>
 			</section>
 
 			<section class="col-two topic">
@@ -74,8 +74,8 @@
 					</code>
 				</figure>
 
-				<p><a href="http://dev.w3.org/html5/srcset/" class="more">Read the <code>srcset</code> Specification</a></p>
-                <p><a href="http://responsiveimagescg.github.com/picture-refimp/demo/">Example <code>srcset</code> parser</a></p>
+				<p><a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a>
+                <a href="http://responsiveimagescg.github.com/picture-refimp/demo/" class="more">Example <code>srcset</code> Parser</a></p>
 		  </section>
 
 			<div class="subtopics">
