@@ -61,15 +61,15 @@
 
 			<section class="col-two topic">
 				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
-				<p>The <code>srcset</code> attribute is an extension to the existing <code>img</code> tag that
-						provides some of the functionality of the <code>picture</code> element. It uses a more concise syntax,
-						part of which can be used by the <code>picture</code> element.</p>
+				<p>The <code>srcset</code> attribute is an extension to the <code>img</code> and <code>source</code> elements
+				that provides a concice method for delivering high-res assets to high-density displays only, while allowing the 
+				user to override requests based on a preference or available bandwidth.</p>
 
 				<figure class="snippet">
 					<figcaption class="codehed">Sample Markup for `srcset`</figcaption>
 					<code>
 <pre>
-&lt;img src="fallback.jpg" alt="" srcset="small.jpg 640w 1x, small-hd.jpg 640w 2x, med.jpg 1x, med-hd.jpg 2x "&gt;
+&lt;img src="fallback.jpg" alt="" srcset="photo.jpg 1x, photo-hd.jpg 2x"&gt;
 </pre>
 					</code>
 				</figure>
@@ -170,9 +170,9 @@
 		<nav class="social">
 			<h1 class="a11y">Share this page</h1>
 			<a class="subhed humans" href="https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors">Contributors</a>
-			<a class="subhed twitter" href="https://twitter.com/respimg">Twitter</a>
-			<a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
-			<a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
+			<a class="subhed no-txt twitter" href="https://twitter.com/respimg">Twitter</a>
+			<a class="subhed no-txt facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
+			<a class="subhed no-txt g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
 		</nav>
 
 	</div>

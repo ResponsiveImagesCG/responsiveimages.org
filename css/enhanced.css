@@ -385,16 +385,21 @@ table tbody td {
 	text-align: center;
 }
 .social .subhed {
-	text-indent: -9999px;
 	background-repeat: no-repeat;
 	display: inline-block;
+	margin: .5em .35em 0 .35em;
+	text-decoration: none;
+}
+.social .subhed.no-txt {
+	text-indent: -9999px;
 	width: 2em;
-	height: 1.8em;
-	margin: 0 .35em;
-	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 0;
 }
 .social a:hover {
 	background-color: #d6342d;
+	color: #fff;
 }
 .social a:active {
 	top: 0;
