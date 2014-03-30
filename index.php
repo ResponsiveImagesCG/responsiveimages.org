@@ -62,7 +62,7 @@
 			<section class="col-two topic">
 				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
 				<p>The <code>srcset</code> attribute is an extension to the <code>img</code> and <code>source</code> elements
-				that provides a concice method for delivering high-res assets to high-density displays only, while allowing the 
+				that provides a concice method for delivering high-res assets to high-density displays only, while allowing the
 				user to override requests based on a preference or available bandwidth.</p>
 
 				<figure class="snippet">
@@ -119,8 +119,8 @@
 				<ul>
 					<li><strong>Blink / Chrome</strong>
 						<ul>
-							<li>Picture: <a href="#">Strongly inclined to implement, but no official bug open</a></li>
-							<li>srcset: <a href="http://blog.chromium.org/2014/02/chrome-34-responsive-images-and_9316.html">IMPLEMENTED/SHIPPED (Chrome 34)</a></li>
+							<li>Picture: <a href="https://code.google.com/p/chromium/issues/detail?id=357586">ASSIGNED (in work)</a></li>
+							<li>srcset: <a href="https://code.google.com/p/chromium/issues/detail?id=357586">IMPLEMENTED/SHIPPED (Chrome 34)</a></li>
 						</ul>
 					</li>
 					<li><strong>WebKit / Safari</strong>
