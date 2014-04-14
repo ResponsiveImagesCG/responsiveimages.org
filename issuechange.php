@@ -17,7 +17,7 @@ function cidr_match($ip, $range)
     return ($ip & $mask) == $subnet;
 }
 
-if(cidr_match($server, '204.232.175.64/27') || cidr_match($server, '192.30.252.0/22')){
+if(cidr_match($server, '66.207.208.102/27') || cidr_match($server, '192.30.252.0/22')){
 	require_once 'issues.php';
 	fetch_issues('open');
 	fetch_issues('closed');
