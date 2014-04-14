@@ -42,17 +42,20 @@ function fetch_issues( $state ) {
 
 	foreach( $repos as $url ) {
 		// Initializing curl
-		$ch = curl_init( $url . ( $state ? '?state=' . $state : '') );
-
+		$url = $url . ( $state ? '?state=' . $state : '');
+		$ch = curl_init();
 		// Configuring curl options
 		$options = array(
 			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_USERAGENT => "Curl",
+			CURLOPT_URL => $url
 		);
 
 		// Setting curl options
 		curl_setopt_array( $ch, $options );
 
 		$json = curl_exec($ch);
+		curl_close($ch);
 
 		// Getting results
 		$newiss = json_decode( $json );
