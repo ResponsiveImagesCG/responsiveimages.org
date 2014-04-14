@@ -95,16 +95,24 @@
 						<dd><a href="http://gh.responsiveimages.org">http://gh.responsiveimages.org</a></dd>
 						<dt class="assets-hed">IRC Logs</dt>
 						<dd><a href="http://ircbot.responsiveimages.org">http://ircbot.responsiveimages.org</a></dd>
-						<dt class="assets-hed">Mailing List</dt>
+						<dt class="assets-hed">Discussion List Archives</dt>
 						<dd><a href="http://list.responsiveimages.org">http://list.responsiveimages.org</a></dd>
 					</dl>
 				</section>
 
 				<section class="col-three topic">
-					<h1 class="subhed"><a href="http://responsiveimages.org/demos/">Try it now!</a></h1>
-					<p>The members of the RICG have put together a number of demos for the <code>picture</code> and <code>srcset</code> elements. The demos on this page work in any modern browser.</p>
+					<h1 class="subhed"><a href="http://responsiveimages.org/demos/">Want to stay updated?</a></h1>
 
-					<a href="http://responsiveimages.org/demos/" class="more">View the Demos</a>
+					<p class="assets-hed">Subscribe to our newsletter!</h2>
+					<div id="mc_embed_signup">
+						<form action="http://responsiveimages.us8.list-manage1.com/subscribe/post?u=c988d9ca55d5d09e73a7dc993&amp;id=1593118b9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<label for="mce-EMAIL" class="a11y">Email Address</label>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;"><input type="text" name="b_c988d9ca55d5d09e73a7dc993_1593118b9a" value=""></div>
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subhed go">
+						</form>
+					</div>
 				</section>
 			</div>
 

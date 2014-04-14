@@ -3,6 +3,7 @@ html, body {
 	padding: 0;
 }
 .a11y {
+	display: block;
 	text-indent: -9999px;
 	height: 1px;
 	overflow: hidden;
@@ -231,6 +232,7 @@ input {
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	text-decoration: none;
+	border-radius: 0;
 }
 .go:hover {
 	color: #fff;
@@ -580,6 +582,15 @@ picture {
 .picturedemo figcaption {
 	clear: both;
 }
+.topic #mc_embed_signup form {
+	padding-left: 0;
+}
+.topic #mc_embed_signup form input[type="email"] {
+	width: 90%;
+	padding: .5em .5em .4em .5em;
+	margin: .5em 0;
+}
+
 @media screen and (min-width: 50em) {
 	.main {
 		float: none;
