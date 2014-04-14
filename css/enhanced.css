@@ -590,6 +590,15 @@ picture {
 	padding: .5em .5em .4em .5em;
 	margin: .5em 0;
 }
+.newsletter p.desc {
+	font-size: .9em;
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+.issue-tracker {
+	padding-top: 2em;
+	clear: both;
+}
 
 @media screen and (min-width: 50em) {
 	.main {

@@ -100,10 +100,11 @@
 					</dl>
 				</section>
 
-				<section class="col-three topic">
+				<section class="col-three topic newsletter" id="newsletter">
 					<h1 class="subhed"><a href="http://responsiveimages.org/demos/">Want to stay updated?</a></h1>
 
-					<p class="assets-hed">Subscribe to our newsletter!</h2>
+					<p class="assets-hed">Subscribe to our newsletter!</p>
+					<p class="desc">Get news, announcements, and implementation updates every other Friday!</p>
 					<div id="mc_embed_signup">
 						<form action="http://responsiveimages.us8.list-manage1.com/subscribe/post?u=c988d9ca55d5d09e73a7dc993&amp;id=1593118b9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<label for="mce-EMAIL" class="a11y">Email Address</label>
@@ -153,7 +154,6 @@
 			</section>
 
 			<section class="issue-tracker" id="issue-tracker">
-				<h1 class="a11y">Issue Tracker</h1>
 				<div id="issues-open">
 					<? print_issues('open', get_issues( 'open' ))?>
 				</div>
