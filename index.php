@@ -146,8 +146,8 @@
 					</li>
 					<li><strong>Microsoft Internet Explorer</strong>
 						<ul>
-							<li>Picture: <a href="https://connect.microsoft.com/IE/feedback/details/825880/implement-picture-element-and-srcset-attribute">NO INFORMATION</a></li>
-							<li>srcset: <a href="https://connect.microsoft.com/IE/feedback/details/825880/implement-picture-element-and-srcset-attribute">NO INFORMATION</a></li>
+							<li>Picture: <a href="http://status.modern.ie/pictureelement">UNDER CONSIDERATION</a></li>
+							<li>srcset: <a href="http://status.modern.ie/imgsrcset">UNDER CONSIDERATION</a></li>
 						</ul>
 					</li>
 				</ul>
