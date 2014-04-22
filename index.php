@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/enhanced.css?1" media="only all">
 	<link rel="author" href="humans.txt" />
+	<link href="img/favicon.ico" rel="icon">
 </head>
 <body>
 
