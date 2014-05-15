@@ -44,6 +44,7 @@
 				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
 				an image. By using media queries, it gives developers control as to when and if those
 				images are presented to the user.</p>
+				<p>The <code>picture</code> element is one part of the new <a href="http://picture.responsiveimages.org">picture specification</a>.</p>
 
 				<figure class="snippet">
 					<figcaption class="codehed">Sample Markup for `picture`</figcaption>
@@ -57,20 +58,22 @@
 </pre>
 					</code>
 				</figure>
-				<a href="http://picture.responsiveimages.org" class="more">The <code>picture</code> Specification</a>
+				<a href="http://picture.responsiveimages.org" class="more">The Picture Specification</a>
 			</section>
 
 			<section class="col-two topic">
-				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
-				<p>The <code>srcset</code> attribute is an extension to the <code>img</code> and <code>source</code> elements
-				that provides a concise method for delivering high-res assets to high-density displays only, while allowing the
-				user to override requests based on a preference or available bandwidth.</p>
+				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What are the `srcset` and `sizes` attributes?</a></h1>
+				<p>The <code>srcset</code> and <code>sizes</code> attributes extend the <code>img</code> and <code>source</code> elements to provide a list of available image sources and their sizes. Browsers can then use this information to pick the best image source.</p>
+				<p>Both <code>srcset</code> and <code>sizes</code> are part of the <a href="http://picture.responsiveimages.org/">picture specification</a> and can used separately or in conjunction with the <code>picture</code> element.</p>
 
 				<figure class="snippet">
-					<figcaption class="codehed">Sample Markup for `srcset`</figcaption>
+					<figcaption class="codehed">Sample Markup for `srcset` and `sizes`</figcaption>
 					<code>
 <pre>
-&lt;img src="fallback.jpg" alt="" srcset="photo.jpg 1x, photo-hd.jpg 2x"&gt;
+&lt;img src="small.jpg"
+     srcset="large.jpg 1024w, medium.jpg 640w, small.jpg 320w"
+     sizes="(min-width: 36em) 33.3vw, 100vw"
+     alt="A rad wolf" /&gt;
 </pre>
 					</code>
 				</figure>
