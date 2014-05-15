@@ -63,7 +63,7 @@
 			<section class="col-two topic">
 				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What is the `srcset` attribute?</a></h1>
 				<p>The <code>srcset</code> attribute is an extension to the <code>img</code> and <code>source</code> elements
-				that provides a concice method for delivering high-res assets to high-density displays only, while allowing the
+				that provides a concise method for delivering high-res assets to high-density displays only, while allowing the
 				user to override requests based on a preference or available bandwidth.</p>
 
 				<figure class="snippet">
