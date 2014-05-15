@@ -62,7 +62,7 @@
 			</section>
 
 			<section class="col-two topic">
-				<h1 class="subhed"><a href="http://dev.w3.org/html5/srcset/">What are the `srcset` and `sizes` attributes?</a></h1>
+				<h1 class="subhed"><a href="http://picture.responsiveimages.org/#relationship-to-srcset">What are the `srcset` and `sizes` attributes?</a></h1>
 				<p>The <code>srcset</code> and <code>sizes</code> attributes extend the <code>img</code> and <code>source</code> elements to provide a list of available image sources and their sizes. Browsers can then use this information to pick the best image source.</p>
 				<p>Both <code>srcset</code> and <code>sizes</code> are part of the <a href="http://picture.responsiveimages.org/">picture specification</a> and can used separately or in conjunction with the <code>picture</code> element.</p>
 
@@ -78,7 +78,9 @@
 					</code>
 				</figure>
 
-				<p><a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a>
+				<p>
+				<a href="http://picture.responsiveimages.org/#relationship-to-srcset" class="more">Picture relationship to <code>srcset</code></a>
+				<a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a>
                 <a href="http://responsiveimagescg.github.com/picture-refimp/demo/" class="more">Example <code>srcset</code> Parser</a></p>
 		  </section>
 
