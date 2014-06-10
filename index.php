@@ -80,8 +80,7 @@
 
 				<p>
 				<a href="http://picture.responsiveimages.org/#relationship-to-srcset" class="more">Picture relationship to <code>srcset</code></a>
-				<a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a>
-                <a href="http://responsiveimagescg.github.com/picture-refimp/demo/" class="more">Example <code>srcset</code> Parser</a></p>
+				<a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a></p>
 		  </section>
 
 			<div class="subtopics">
