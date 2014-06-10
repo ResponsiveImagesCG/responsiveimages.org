@@ -77,10 +77,6 @@
 </pre>
 					</code>
 				</figure>
-
-				<p>
-				<a href="http://picture.responsiveimages.org/#relationship-to-srcset" class="more">Picture relationship to <code>srcset</code></a>
-				<a href="http://dev.w3.org/html5/srcset/" class="more">The <code>srcset</code> Specification</a></p>
 		  </section>
 
 			<div class="subtopics">
