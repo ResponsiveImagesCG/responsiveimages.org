@@ -13,7 +13,6 @@ html, body {
 a {
 	color: #6f201b;
 	text-decoration: underline;
-	position: relative;
 	-webkit-transition: color .1s linear, background-color .1s linear;
 	   -moz-transition: color .1s linear, background-color .1s linear;
 	     -o-transition: color .1s linear, background-color .1s linear;
@@ -24,7 +23,7 @@ a:hover {
 	text-decoration: none;
 }
 a:active {
-	top: 1px;
+	text-shadow: 0 -1px 0 white;
 }
 img {
 	max-width: 100%;
