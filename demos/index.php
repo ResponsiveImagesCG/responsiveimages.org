@@ -133,7 +133,7 @@
 	<div class="doc-foot">
 		<p style="clear:both">Hosting and bandwidth for these demos is provided by <a href="http://cdnconnect.com">CDNConnect.com</a></p>
 		<aside class="assets">
-			<a href="RICG-Logos.zip">
+			<a href="/RICG-Logos.zip">
 				<img src="http://responsiveimages.org/img/ricg-icon.png" class="assets-thumb">
 				<h1 class="assets-hed">Download the RICG Logos</h1>
 				<p>Want to show your support for the goals of the RICG? Use our logo!</p>
