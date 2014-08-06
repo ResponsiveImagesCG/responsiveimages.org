@@ -129,7 +129,7 @@
 				<ul>
 					<li><strong>Blink / Chrome</strong>
 						<ul>
-							<li>Picture: <a href="https://code.google.com/p/chromium/issues/detail?id=368830">ASSIGNED (targeted for Chrome 38)</a></li>
+							<li>Picture: <a href="https://code.google.com/p/chromium/issues/detail?id=368830">IMPLEMENTED/SHIPPED (Chrome 38)</a></li>
 							<li>srcset: <a href="https://code.google.com/p/chromium/issues/detail?id=357586">IMPLEMENTED/SHIPPED (Chrome 34)</a></li>
 						</ul>
 					</li>
@@ -141,8 +141,8 @@
 					</li>
 					<li><strong>Mozilla Firefox</strong>
 						<ul>
-							<li>Picture: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870022">ASSIGNED (soon in Nightly)</a></li>
-							<li>srcset: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870021">ASSIGNED (soon in Nightly)</a></li>
+							<li>Picture: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870022">IMPLEMENTED/SHIPPED (Firefox 33, behind flags)</a></li>
+							<li>srcset: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=870021">IMPLEMENTED/SHIPPED (Firefox 33, behind flags)</a></li>
 						</ul>
 					</li>
 					<li><strong>Microsoft Internet Explorer</strong>
