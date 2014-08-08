@@ -102,6 +102,25 @@
 					</figcaption>
 				</figure>
 			</section>
+			<section class="demo">
+				<div class="col-a">
+					<h1 class="demo-hed"><a href="variable-width/index.html">Variable width example</a></h1>
+					<p>This example shows of variable width images with multiple responsive breakpoints.</p>
+					<address>Yoav Weiss</address>
+				</div>
+				<figure class="demo-thumb col-b">
+					<a href="variable-width/index.html"><img src="http://responsiveimages.org/img/demo-crop.jpg"></a>
+					<figcaption>
+						<p class="demo-hed">This demo shows:</p>
+						<ul>
+							<li>mobile</li>
+							<li>tablet</li>
+							<li>desktop</li>
+							<li>fallback</li>
+						</ul>
+					</figcaption>
+				</figure>
+			</section>
 
 			<!--
 			Not working: see bug 
