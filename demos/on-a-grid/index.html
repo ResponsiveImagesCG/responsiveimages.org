@@ -20,9 +20,6 @@
 <link rel="stylesheet" href="../css/demo-page.css">
 <!-- code highlighting via prism.js -->
 <link rel="stylesheet" href="http://responsiveimages.org/css/enhanced.css" media="only all">
-
-     <script> (function(){var now = Number(new Date());while(now + 2000 > Number(new Date())){console.log("Waiting...");};})();</script>
-
 </head>
 <body>
 <header class="doc-head">
@@ -33,39 +30,33 @@
     <section class="picturedemo">
       <h1><a class="navlink" href="../">Demos</a> <span>Grid system</span></h1>
       <figure>
-        <picture>
-          <source media="(max-width: 30em)" src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@mobile.jpg">
-          <source media="(min-width: 30em) and (max-width: 48em)" src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@wide-mobile.jpg">
-          <source media="(min-width: 48em) and (max-width: 60em)" src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@tablet.jpg">
-          <source media="(min-width: 60em) and (max-width: 80em)" src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@desktop.jpg">
-          <source media="(min-width: 80em)" src="img/yacht_race@hires.jpg">
-          <img src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@fallback.jpg" alt="A very exciting yacht race.">
+          <img src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@fallback.jpg" 
+               srcset="
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@mobile.jpg 320w,        
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@wide-mobile.jpg 480w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@tablet.jpg 768w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@desktop.jpg 1024w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@hires.jpg 1280w"
+                sizes="90vw"
+                alt="A very exciting yacht race.">
           <p>A very exciting yacht race.</p>
-        </picture>
+
         <figcaption>
           <p>This uses a mobile first approach with 5 breakpoint. It only loads images as each breakpoint matches.</p>
         </figcaption>
       </figure>
       <h2>HTML</h2>
-      <div class="demosource"><code class="language-markup">&lt;picture width=&quot;100%&quot; height=&quot;100%&quot;&gt;
-    
-    &lt;!-- Mobile Layout --&gt;
-    &lt;source media=&quot;(max-width: 30em)&quot; src=&quot;img/yacht_race@mobile.jpg&quot;&gt;
-    &lt;!-- Wide Mobile Layout --&gt;
-    &lt;source media=&quot;(min-width: 30em) and (max-width: 48em)&quot; src=&quot;img/yacht_race@wide-mobile.jpg&quot;&gt;
-    &lt;!-- Tablet Layout --&gt;
-    &lt;source media=&quot;(min-width: 48em) and (max-width: 60em)&quot; src=&quot;img/yacht_race@tablet.jpg&quot;&gt;
-    
-    &lt;!-- start: Stationary Devices --&gt;
-    &lt;source media=&quot;(min-width: 60em) and (max-width: 80em)&quot; src=&quot;img/yacht_race@desktop.jpg&quot;&gt;
-    &lt;!-- Source intended for: Notebooks and normal Desktop Layouts --&gt;
-    &lt;source media=&quot;(min-width: 80em)&quot; src=&quot;img/yacht_race@hires.jpg&quot;&gt;
-    
-    &lt;!-- fallback img if picture is not supported --&gt;
-    &lt;img src=&quot;img/yacht_race@fallback.jpg&quot; alt=&quot;A very exciting yacht race.&quot;&gt;
-    &lt;!-- alternate text --&gt;
-    &lt;p&gt;A very exciting yacht race.&lt;/p&gt;
-&lt;/picture&gt; </code></div>
+      <div class="demosource"><code class="language-markup">
+&lt;img src="http://respimg.cdnconnect.com/on-a-grid/yacht_race@fallback.jpg" 
+    srcset="
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@mobile.jpg 320w,        
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@wide-mobile.jpg 480w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@tablet.jpg 768w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@desktop.jpg 1024w,
+ http://respimg.cdnconnect.com/on-a-grid/yacht_race@hires.jpg 1280w"
+    sizes="90vw"
+    alt="A very exciting yacht race.">
+       </code></div>
     </section>
     <section>
   <h2>Credits</h2>
