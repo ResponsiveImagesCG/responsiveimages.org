@@ -30,19 +30,13 @@
       <h1><a class="navlink" href="../">Demos</a> <span>Simple crop</span></h1>
       <figure>
         <picture>
-        <source media="(max-width: 479px)" 
-                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@1x.jpg">
-        <source media="(min-width: 480px) and (max-width: 639px)" 
-                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@2x.jpg">
-        <source media="(min-width: 640px)" 
-                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@4x.jpg">
         <source media="print" src="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@monochrome.jpg">
-      
-      <!-- fallback if picture is not supported --> 
-      <img src="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@2x.jpg"> 
-      
-      <!-- alternate text -->
-      <p> Nymphenburg Castle in Munich during sunset</p>
+        <source media="(max-width: 480px)" 
+                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@1x.jpg">
+        <source media="(max-width: 640px)" 
+                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@2x.jpg">
+      	<img src="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@4x.jpg">
+        <p>Nymphenburg Castle in Munich during sunset</p>
     </picture>
     <figcaption>
      <p><strong>Rotate/resize the window the image change.</strong> 
@@ -55,15 +49,12 @@
   <h2>HTML</h2>
 <div class="demosource"><code class="language-markup">
 &lt;picture>
-    &lt;source media="(max-width: 479px)" srcset="test_landscape_1@1x.jpg">
-    &lt;source media="(min-width: 480px) and (max-width: 639px)" srcset="test_landscape_1@2x.jpg">
-    &lt;source media="(min-width: 640px)" srcset="test_landscape_1@4x.jpg">
-    &lt;source media="print" srcset="test_landscape_1@monochrome.jpg">
-
-    &lt;!-- fallback img if picture is not supported -->
-    &lt;img src="test_landscape_1@2x.jpg">
-                
-    &lt;!-- alternate text -->
+    &lt;source media="print" src="monochrome.jpg">
+    &lt;source media="(max-width: 480px)" 
+            srcset="landscape_small.jpg">
+    &lt;source media="(max-width: 640px)" 
+            srcset="landscape_med.jpg">
+  	&lt;img src="landscape_1@large.jpg">
     &lt;p>Nymphenburg Castle in Munich during sunset&lt;/p>
 &lt;/picture></code></div>
 </section>
