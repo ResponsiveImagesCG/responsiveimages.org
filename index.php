@@ -27,10 +27,8 @@
 		<figure class="col-b live-demo">
 			<picture>
 				<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
-				<source media="(min-width: 40em)" src="img/devices.gif">
-				<noscript>
-					<img src="img/devices-sm.png">
-				</noscript>
+				<source media="(min-width: 40em)" srcset="img/devices.gif">
+				<img src="img/devices-sm.gif">
 			</picture>
 			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
