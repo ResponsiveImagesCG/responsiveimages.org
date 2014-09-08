@@ -109,7 +109,7 @@
 					<address>Yoav Weiss</address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="variable-width/index.html"><img src="http://responsiveimages.org/img/demo-crop.jpg"></a>
+					<a href="variable-width/index.html"><img src="http://responsiveimages.org/img/demo-grid.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						<ul>
