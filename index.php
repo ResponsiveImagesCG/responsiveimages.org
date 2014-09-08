@@ -72,7 +72,7 @@
 &lt;img src="small.jpg"
      srcset="large.jpg 1024w, medium.jpg 640w, small.jpg 320w"
      sizes="(min-width: 36em) 33.3vw, 100vw"
-     alt="A rad wolf" /&gt;
+     alt="A rad wolf"&gt;
 </pre>
 					</code>
 				</figure>
