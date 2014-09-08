@@ -31,10 +31,16 @@
       <figure>
         <picture>
         <source media="print" srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@monochrome.jpg">
+
         <source media="(max-width: 480px)" 
                 srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@1x.jpg">
+
         <source media="(max-width: 640px)" 
                 srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@2x.jpg">
+
+        <source media="(max-width: 1024px)" 
+                srcset="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@4x.jpg">
+
       	<img src="http://respimg.cdnconnect.com/basic-implentation/test_landscape_1@4x.jpg" alt="Nymphenburg Castle in Munich during sunset">
     </picture>
     <figcaption>
@@ -48,13 +54,19 @@
   <h2>HTML</h2>
 <div class="demosource"><code class="language-markup">
 &lt;picture>
-    &lt;source media="print" src="monochrome.jpg">
-    &lt;source media="(max-width: 480px)" 
-            srcset="landscape_small.jpg">
-    &lt;source media="(max-width: 640px)" 
-            srcset="landscape_med.jpg">
-  	&lt;img src="landscape_1@large.jpg"
-            alt="Nymphenburg Castle in Munich during sunset">
+  &lt;source media="print" srcset="landscape_print.jpg">
+
+  &lt;source media="(max-width: 480px)" 
+          srcset="landscape_small.jpg">
+
+  &lt;source media="(max-width: 640px)" 
+          srcset="landscape_medium.jpg">
+
+  &lt;source media="(max-width: 1024px)" 
+          srcset="landscape_large.jpg">
+
+  &lt;img src="landscape_large.jpg" 
+          alt="Nymphenburg Castle in Munich during sunset">
 &lt;/picture></code></div>
 </section>
 <section>
