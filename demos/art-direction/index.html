@@ -29,11 +29,13 @@
       <h1><a class="navlink" href="../">Demos</a> <span>Art direction</span></h1>
       <figure>
         <picture>
-          <source media="(min-width: 30em) and (max-width: 48em)"
+          <source media="(max-width: 25em)"
+                  srcset="http://respimg.cdnconnect.com/art-direction/iphone.png">
+          <source media="(max-width: 48em)"
                   srcset="http://respimg.cdnconnect.com/art-direction/iphone@tablet.png">
-          <source media="(min-width: 48em)"
-                  srcset="http://respimg.cdnconnect.com/art-direction/iphone@desktop.png">
-          <img src="http://respimg.cdnconnect.com/art-direction/iphone.png" alt=""> </picture>
+          <img src="http://respimg.cdnconnect.com/art-direction/iphone.png" 
+              alt="The iPhone Safari web browser showing the RICG website."> 
+          </picture>
         <figcaption>
           <p><strong>Rotate/resize the window the image change.</strong> The iPhone Safari web browser showing the RICG website.</p>
           <p class="description">Web developers often need to provide different versions of the same image in order to communicate effectively across the wide range of screen resolutions and pixel densities available on today's devices. If the screen is small and the image is scaled down, its details cannot be seen. Using "<a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>" helps overcome this problem. </p>
@@ -45,13 +47,15 @@
     <section class="demosource wrapper highlight">
       <h2>HTML</h2>
       <div class="demowrapper"> <code class="language-markup">&lt;picture&gt;
-        &lt;source media="(max-width: 30em)" src="img/iphone.jpg"&gt;
-        &lt;source media="(min-width: 30em) and (max-width: 48em)" src="img/iphone@tablet.jpg"&gt;
-        &lt;source media="(min-width: 48em)" src="img/iphone@desktop.jpg"&gt;
-        &lt;!-- fallback img if picture is not supported --&gt;
-        &lt;img src="img/iphone.jpg"&gt;
-        &lt;!-- providing alternate text --&gt;
-        &lt;p&gt;The iPhone Safari web browser showing the RICG website.&lt;/p&gt;
+  &lt;source media="(max-width: 25em)"
+          srcset="iphone.png">
+          
+  &lt;source media="(max-width: 48em)"
+          srcset="iphone@tablet.png">
+
+  &lt;img src="iphone.png" 
+      alt="The iPhone Safari web browser showing the RICG website.">
+
 &lt;/picture&gt;</code></div>
     </section>
     <!-- END CODE / SYNTAX -->
@@ -64,13 +68,13 @@
   </div>
 </div>
 <footer class="doc-foot">
-  <aside class="assets"> <a href="http://responsiveimages.org/RICG-Logos.zip"> <img src="http://responsiveimages.org/img/ricg-icon.png" class="assets-thumb">
-    <h1 class="assets-hed">Download the RICG Logos</h1>
-    <p>Want to show your support for the goals of the RICG? Use our logo!</p>
-    </a> </aside>
-  <nav class="social">
-    <h1 class="a11y">Share this page</h1>
-    <a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a> <a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a> <a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a> </nav>
+<nav class="social">
+<h1 class="a11y">Share this page</h1>
+<a class="subhed humans" href="https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors">Contributors</a>
+<a class="subhed no-txt twitter" href="https://twitter.com/respimg">Twitter</a>
+<a class="subhed no-txt facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
+<a class="subhed no-txt g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
+</nav>
 </footer>
 
 <!-- code highlighting via prism.js --> 
