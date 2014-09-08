@@ -149,25 +149,15 @@
 	</div>
 
 
-	<div class="doc-foot">
-		<p style="clear:both">Hosting and bandwidth for these demos is provided by <a href="http://cdnconnect.com">CDNConnect.com</a></p>
-		<aside class="assets">
-			<a href="/RICG-Logos.zip">
-				<img src="http://responsiveimages.org/img/ricg-icon.png" class="assets-thumb">
-				<h1 class="assets-hed">Download the RICG Logos</h1>
-				<p>Want to show your support for the goals of the RICG? Use our logo!</p>
-			</a>
-		</aside>
-
-		<nav class="social">
-			<h1 class="a11y">Share this page</h1>
-            <a class="subhed humans" href="https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors">Contributors</a>
-			<a class="subhed twitter" href="http://twitter.com/home?status=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!%0Ahttp%3A%2F%2Fresponsiveimages.org">Twitter</a>
-			<a class="subhed facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
-			<a class="subhed g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
-		</nav>
-
-	</div>
+<footer class="doc-foot">
+<nav class="social">
+<h1 class="a11y">Share this page</h1>
+<a class="subhed humans" href="https://github.com/ResponsiveImagesCG/responsiveimages.org/graphs/contributors">Contributors</a>
+<a class="subhed no-txt twitter" href="https://twitter.com/respimg">Twitter</a>
+<a class="subhed no-txt facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fresponsiveimages.org&amp;t=Read%20the%20latest%20news%20on%20responsive%20images%2C%20and%20get%20involved!">Facebook</a>
+<a class="subhed no-txt g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
+</nav>
+</footer>
 	<script src="http://responsiveimages.org/js/picturefill.js"></script>
 
 	<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName', 'responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
