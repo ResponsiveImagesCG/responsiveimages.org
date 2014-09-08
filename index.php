@@ -51,8 +51,10 @@
 					<code>
 <pre>
 &lt;picture&gt;
-  &lt;source media="(min-width: 40em)" srcset="big.jpg 1x, big-hd.jpg 2x"&gt;
-  &lt;source srcset="small.jpg 1x, small-hd.jpg 2x"&gt;
+  &lt;source media="(min-width: 40em)"
+    srcset="big.jpg 1x, big-hd.jpg 2x"&gt;
+  &lt;source 
+    srcset="small.jpg 1x, small-hd.jpg 2x"&gt;
   &lt;img src="fallback.jpg" alt=""&gt;
 &lt;/picture&gt;
 </pre>
