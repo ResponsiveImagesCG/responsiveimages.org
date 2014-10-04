@@ -126,7 +126,7 @@
 				<h1 class="subhed">Implementation status</h1>
 				<p><em>This list indicates the status of implementation in major browser engines. We always try to keep this up-to-date but please refer to the linked issues for the latest status.<br> In most bugtrackers you can vote for implementation in the linked bugs.</em></p>
 				<ul>
-					<li><strong>Blink / Chrome</strong>
+					<li><strong>Blink / Chrome / Opera</strong>
 						<ul>
 							<li>Picture: <a href="https://code.google.com/p/chromium/issues/detail?id=368830">IMPLEMENTED/SHIPPED (Chrome 38)</a></li>
 							<li>srcset: <a href="https://code.google.com/p/chromium/issues/detail?id=357586">IMPLEMENTED/SHIPPED (Chrome 34)</a></li>
