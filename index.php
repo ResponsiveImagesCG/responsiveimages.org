@@ -61,9 +61,9 @@
 			</section>
 
 			<section class="col-two topic">
-				<h1 class="subhed"><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#the-picture-element">What are the `srcset` and `sizes` attributes?</a></h1>
+				<h1 class="subhed"><a href="https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset">What are the `srcset` and `sizes` attributes?</a></h1>
 				<p>The <code>srcset</code> and <code>sizes</code> attributes extend the <code>img</code> and <code>source</code> elements to provide a list of available image sources and their sizes. Browsers can then use this information to pick the best image source.</p>
-				<p>Both <code>srcset</code> and <code>sizes</code> are part of the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#the-picture-element">HTML specification</a> and can used separately or in conjunction with the <code>picture</code> element.</p>
+				<p>Both <code>srcset</code> and <code>sizes</code> are part of the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset">HTML specification</a> and can used separately or in conjunction with the <code>picture</code> element.</p>
 
 				<figure class="snippet">
 					<figcaption class="codehed">Sample Markup for `srcset` and `sizes`</figcaption>
