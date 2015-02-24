@@ -38,11 +38,11 @@
 	<div class="main">
 		<div>
 			<section class="col-two topic">
-				<h1 class="subhed"><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#the-picture-element">What is the `picture` Element?</a></h1>
+				<h1 class="subhed"><a href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element">What is the `picture` Element?</a></h1>
 				<p>The <code>picture</code> element is a markup pattern that allows developers to declare multiple sources for
 				an image. By using media queries, it gives developers control as to when and if those
 				images are presented to the user.</p>
-				<p>The <code>picture</code> element is one part of the  <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#the-picture-element">HTML specification</a>.</p>
+				<p>The <code>picture</code> element is one part of the  <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element">HTML specification</a>.</p>
 
 			  <figure class="snippet">
 					<figcaption class="codehed">Sample Markup for `picture`</figcaption>
