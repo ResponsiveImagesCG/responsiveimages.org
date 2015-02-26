@@ -25,14 +25,8 @@
 			<p class="intro">The demos work in any modern browser.</p>
 		</div>
 	<figure class="col-b live-demo">
-			<picture>
-				<source srcset="http://responsiveimages.org/img/devices-sm.gif 1x, http://responsiveimages.org/img/devices.gif 2x">
-				<source media="(min-width: 40em)" src="http://responsiveimages.org/img/devices.gif">
-				<noscript>
-					<img src="http://responsiveimages.org/img/devices-sm.png">
-				</noscript>
-			</picture>
-			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
+		<img src="/img/devices-sm.png" srcset="/img/devices.gif 2x">
+		<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
 	</header>
 

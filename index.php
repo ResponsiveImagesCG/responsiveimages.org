@@ -25,11 +25,7 @@
 			<a href="http://www.w3.org/community/respimg/" class="subhed go">Join Us!</a>
 		</div>
 		<figure class="col-b live-demo">
-			<picture>
-				<source srcset="img/devices-sm.gif 1x, img/devices.gif 2x">
-				<source media="(min-width: 40em)" srcset="img/devices.gif">
-				<img src="img/devices-sm.gif">
-			</picture>
+			<img src="img/devices-sm.gif" srcset="img/devices.gif 2x">
 			<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
 
