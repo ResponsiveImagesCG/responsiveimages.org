@@ -131,7 +131,7 @@
 					<li><strong>WebKit / Safari</strong>
 						<ul>
 							<li>Picture: <a href="https://bugs.webkit.org/show_bug.cgi?id=116963">UNCONFIRMED (not implemented)</a></li>
-							<li>srcset: <a href="https://bugs.webkit.org/show_bug.cgi?id=110252">IMPLEMENTED/SHIPPED (Safari 6.2, iOS8)</a></li>
+							<li>srcset: <a href="https://bugs.webkit.org/show_bug.cgi?id=110252">IMPLEMENTED/SHIPPED (Safari 6.2, Safari 7.1, iOS8)</a></li>
 						</ul>
 					</li>
 					<li><strong>Mozilla Firefox</strong>
