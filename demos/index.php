@@ -25,7 +25,7 @@
 			<p class="intro">The demos work in any modern browser.</p>
 		</div>
 	<figure class="col-b live-demo">
-		<img src="/img/devices-sm.png" srcset="/img/devices.gif 2x">
+		<img src="/img/devices-sm.gif" srcset="/img/devices.gif 2x">
 		<figcaption>Examples of <a href="http://usecases.responsiveimages.org/#art-direction">art direction</a>. See more <a href="/demos/">demos of responsive images</a>.</figcaption>
 		</figure>
 	</header>
@@ -43,7 +43,7 @@
 					</address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="basic-implementation/index.html"><img src="http://responsiveimages.org/img/demo-crop.jpg"></a>
+					<a href="basic-implementation/index.html"><img src="/img/demo-crop.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						<ul>
@@ -64,7 +64,7 @@
 					<address>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> | <a href="https://twitter.com/ixisio">@ixisio</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="on-a-grid/index.html"><img src="http://responsiveimages.org/img/demo-grid.jpg"></a>
+					<a href="on-a-grid/index.html"><img src="/img/demo-grid.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						 <ul>
@@ -85,7 +85,7 @@
 					<address>Author: <a href="http://www.shanehudson.net/">Shane Hudson</a> | <a href="https://twitter.com/shanehudson">@shanehudson</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="art-direction/index.html"><img src="http://responsiveimages.org/img/demo-orientation.jpg"></a>
+					<a href="art-direction/index.html"><img src="/img/demo-orientation.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						 <ul>
@@ -103,7 +103,7 @@
 					<address>Yoav Weiss</address>
 				</div>
 				<figure class="demo-thumb col-b">
-					<a href="variable-width/index.html"><img src="http://responsiveimages.org/img/demo-grid.jpg"></a>
+					<a href="variable-width/index.html"><img src="/img/demo-grid.jpg"></a>
 					<figcaption>
 						<p class="demo-hed">This demo shows:</p>
 						<ul>
@@ -152,7 +152,7 @@
 <a class="subhed no-txt g-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fresponsiveimages.org">Google Plus</a>
 </nav>
 </footer>
-	<script src="http://responsiveimages.org/js/picturefill.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js"></script>
 
 	<script>var _gaq=[['_setAccount','UA-35760540-1'],['_trackPageview'],['_setDomainName', 'responsiveimages.org']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
 </body>
