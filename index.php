@@ -140,7 +140,7 @@
 							<li>srcset: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1018389">IMPLEMENTED/SHIPPED (Firefox 38)</a></li>
 						</ul>
 					</li>
-					<li><strong>Microsoft Internet Explorer</strong>
+					<li><strong>Microsoft Edge</strong>
 						<ul>
 							<li>Picture: <a href="http://status.modern.ie/pictureelement">UNDER CONSIDERATION</a></li>
 							<li>srcset: <a href="http://status.modern.ie/imgsrcset">IN DEVELOPMENT</a></li>
