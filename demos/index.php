@@ -60,7 +60,7 @@
 			<section class="demo">
 				<div class="col-a">
 					<h1 class="demo-hed"><a href="on-a-grid/index.html">Grid System</a></h1>
-					<p>This shows the basic implementation and usage of the <code>picture</code> element. It uses the <code>source</code> element and different @media-queries to fetch the correct image for the device-screen.</p>
+					<p>This shows the basic implementation and usage of the <code>img</code> element. It uses the <code>srcset</code> attribute and different @media-queries to fetch the correct image for the device-screen.</p>
 					<address>Author: <a href="http://www.andreasklein.org/">Andreas Klein</a> | <a href="https://twitter.com/ixisio">@ixisio</a></address>
 				</div>
 				<figure class="demo-thumb col-b">
