@@ -130,8 +130,8 @@
 					</li>
 					<li><strong>WebKit / Safari</strong>
 						<ul>
-							<li>Picture: <a href="https://bugs.webkit.org/show_bug.cgi?id=116963">UNCONFIRMED (not implemented)</a></li>
-							<li>srcset: <a href="https://bugs.webkit.org/show_bug.cgi?id=110252">IMPLEMENTED/SHIPPED (Safari 6.2, Safari 7.1, iOS8)</a></li>
+							<li>Picture: <a href="https://bugs.webkit.org/show_bug.cgi?id=116963">IMPLEMENTED/SHIPPED (Safari 9.1, iOS 9.3)</a></li>
+							<li>srcset: <a href="https://bugs.webkit.org/show_bug.cgi?id=110252">IMPLEMENTED/SHIPPED (Safari 9, iOS 9)</a></li>
 						</ul>
 					</li>
 					<li><strong>Mozilla Firefox</strong>
@@ -142,8 +142,8 @@
 					</li>
 					<li><strong>Microsoft Edge</strong>
 						<ul>
-							<li>Picture: <a href="http://status.modern.ie/pictureelement">UNDER CONSIDERATION</a></li>
-							<li>srcset: <a href="http://status.modern.ie/imgsrcset">IN DEVELOPMENT</a></li>
+							<li>Picture: <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/10547/">IMPLEMENTED/SHIPPED (Edge build 10547)</a></li>
+							<li>srcset: <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/10240/">IMPLEMENTED/SHIPPED (Edge build 10240)</a></li>
 						</ul>
 					</li>
 				</ul>
